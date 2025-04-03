@@ -6,7 +6,8 @@ public class Jewellers {
 
         if (gold != null) {
             gold.carat();
-        } else {
+        }
+        else {
             System.out.println("Gold is null");
         }
     }
