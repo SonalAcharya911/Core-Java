@@ -1,7 +1,12 @@
 package com.xworkz.sweet;
 
 public class Box {
-    public void open(Sweet sweet){
+    Sweet sweet;
+    public Box(Sweet sweet){
+        this.sweet=sweet;
+        System.out.println("parameterized constructor for Box");
+    }
+    public void open(){
         System.out.println("running open in Box");
         if(sweet!=null){
             sweet.happiness();

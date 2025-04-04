@@ -1,8 +1,12 @@
 package com.xworkz.cigarette;
 
 public class Smoker {
-
-    public void smokes(Cigarette cigarette){
+    Cigarette cigarette;
+    public Smoker(Cigarette cigarette){
+        this.cigarette=cigarette;
+        System.out.println("parameterized constructor for Cigarette");
+    }
+    public void smokes(){
         System.out.println("running smokes in Smoker");
         if(cigarette!=null){
             cigarette.kill();
