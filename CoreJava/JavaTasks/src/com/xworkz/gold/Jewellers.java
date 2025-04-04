@@ -6,7 +6,7 @@ public class Jewellers {
         this.gold=gold;
         System.out.println("parameterized constructor for Jewellers");
     }
-    public void sell(Gold gold) {
+    public void sell() {
         System.out.println("sell running in JewelleryShop");
 
         if (gold != null) {
