@@ -4,10 +4,10 @@ import com.xworkz.god.internal.Trust;
 
 public class Runner {
     public static void main(String[] args) {
-        NGO ngo=new NGO();
+        NGO ngo = new NGO();
         ngo.manage();
         System.out.println("==================================");
-        Trust trust=new Trust();
+        Trust trust = new Trust();
         trust.run();
 
         Enum enums;
