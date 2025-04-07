@@ -1,6 +1,5 @@
 package com.xworkz.shell.internal;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class Shell {
     public Shell(){
