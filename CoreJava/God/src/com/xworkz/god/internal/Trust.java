@@ -6,6 +6,5 @@ public class Trust {
         Temple temple = new Temple();
         temple.pooja();
         System.out.println("building Trust");
-
     }
 }
