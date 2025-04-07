@@ -2,21 +2,21 @@ package com.xworkz.shell.internal;
 
 
 public class Shell {
-    public Shell(){
+    public Shell() {
         System.out.println("no-arg constructor in Shell ");
     }
 
-    public void cover(){
+    public void cover() {
         System.out.println("running cover in Shell");
         breaks();
         collect();
     }
 
-    void breaks(){
+    void breaks() {
         System.out.println("running breaks in Shell");
     }
 
-    private void collect(){
+    private void collect() {
         System.out.println("running collect in Shell");
     }
 }

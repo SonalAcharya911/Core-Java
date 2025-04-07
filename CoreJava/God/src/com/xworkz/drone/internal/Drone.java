@@ -1,20 +1,20 @@
 package com.xworkz.drone.internal;
 
 public class Drone {
-    public Drone(){
+    public Drone() {
         System.out.println("no-arg constructor in Drone");
     }
 
-    private void security(){
+    private void security() {
         System.out.println("running security in Drone");
     }
 
-    void carry(){
+    void carry() {
         System.out.println("running carry in Drone");
         security();
     }
 
-    public void camera(){
+    public void camera() {
         System.out.println("running camera in Drone");
         carry();
     }
