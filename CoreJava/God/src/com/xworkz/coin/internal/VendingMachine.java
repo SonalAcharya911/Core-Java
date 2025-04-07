@@ -9,7 +9,7 @@ public class VendingMachine {
         System.out.println("running take in VendingMachine");
         Coin coin=new Coin();
         coin.flip();
-        System.out.println("==============================================");
+        System.out.println("=========================================");
         coin.insert();
 
     }

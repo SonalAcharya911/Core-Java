@@ -1,6 +1,7 @@
 package com.xworkz.coin.internal;
 
 public class Coin {
+
     public Coin() {
         System.out.println("no-arg constructor for  Coin");
     }
