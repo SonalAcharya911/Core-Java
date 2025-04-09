@@ -1,6 +1,9 @@
 package com.xworkz.caspsules.internal;
 
 public class Owner {
+    public Owner(){
+        System.out.println("no-arg constructor of Owner");
+    }
     public void owns(){
         System.out.println("running owns in Owner");
 

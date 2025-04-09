@@ -1,6 +1,7 @@
 package com.xworkz.caspsules.internal;
 
 public class PostMan {
+
     public PostMan(){
         System.out.println("no-arg constructor for PostMan");
     }
