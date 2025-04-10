@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Lantern {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Lantern extends Lamp{
+    public Lantern(){
+        System.out.println("no-arg constructor for Lantern");
     }
 }

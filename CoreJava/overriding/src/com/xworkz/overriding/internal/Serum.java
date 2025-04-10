@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Serum {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Serum(){
+        System.out.println("no-arg constructor for Serum");
     }
 }

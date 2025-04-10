@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class FlipFlop {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class FlipFlop extends Footwear{
+    public FlipFlop(){
+        System.out.println("no-arg constructor for FlipFlop");
     }
 }

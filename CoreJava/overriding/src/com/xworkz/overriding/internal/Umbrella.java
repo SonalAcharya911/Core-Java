@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Umbrella {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Umbrella extends Cover{
+    public Umbrella(){
+        System.out.println("no-arg constructor for Umbrella");
     }
 }

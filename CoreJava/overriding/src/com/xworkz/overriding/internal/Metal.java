@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Metal {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Metal(){
+        System.out.println("no-arg constructor for Metal");
     }
 }

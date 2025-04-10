@@ -1,8 +1,8 @@
 package com.xworkz.overriding.internal;
 
-public class Microscope {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Microscope extends Device{
+    public Microscope(){
+        System.out.println("no-arg constructor for Microscope");
     }
 }
 

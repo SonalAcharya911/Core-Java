@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Nile {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Nile extends River{
+    public Nile(){
+        System.out.println("no-arg constructor for Nile");
     }
 }

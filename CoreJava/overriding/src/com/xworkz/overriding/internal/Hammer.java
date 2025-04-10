@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Hammer {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Hammer extends Tool{
+    public Hammer(){
+        System.out.println("no-arg constructor for Hammer");
     }
 }

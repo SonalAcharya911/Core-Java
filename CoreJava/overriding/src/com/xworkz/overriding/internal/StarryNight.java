@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class StarryNight {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class StarryNight extends Painting{
+    public StarryNight(){
+        System.out.println("no-arg constructor for StarryNight");
     }
 }

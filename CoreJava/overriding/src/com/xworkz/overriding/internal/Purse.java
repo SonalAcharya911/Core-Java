@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Purse {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Purse(){
+        System.out.println("no-arg constructor for Purse");
     }
 }

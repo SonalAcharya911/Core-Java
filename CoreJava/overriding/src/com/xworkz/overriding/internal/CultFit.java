@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class CultFit {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class CultFit extends Gym{
+    public CultFit(){
+        System.out.println("no-arg constructor for CultFit");
     }
 }

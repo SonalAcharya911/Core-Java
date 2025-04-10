@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Shakespeare {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Shakespeare extends Author{
+    public Shakespeare(){
+        System.out.println("no-arg constructor for Shakespeare");
     }
 }

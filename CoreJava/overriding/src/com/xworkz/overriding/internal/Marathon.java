@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Marathon {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Marathon extends Race{
+    public Marathon(){
+        System.out.println("no-arg constructor for Marathon");
     }
 }

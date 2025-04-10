@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Rolex {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Rolex extends Watch{
+    public Rolex(){
+        System.out.println("no-arg constructor for Rolex");
     }
 }

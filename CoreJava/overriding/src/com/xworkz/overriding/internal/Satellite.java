@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Satellite {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Satellite extends Spaceship{
+    public Satellite(){
+        System.out.println("no-arg constructor for Satellite");
     }
 }

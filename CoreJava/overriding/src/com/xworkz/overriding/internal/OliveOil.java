@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class OliveOil {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class OliveOil extends Oil {
+    public OliveOil(){
+        System.out.println("no-arg constructor for OliveOil");
     }
 }

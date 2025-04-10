@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Toothbrush {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Toothbrush extends Brush{
+    public Toothbrush(){
+        System.out.println("no-arg constructor for Toothbrush");
     }
 }

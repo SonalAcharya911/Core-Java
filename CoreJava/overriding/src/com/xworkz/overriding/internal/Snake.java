@@ -1,8 +1,8 @@
 package com.xworkz.overriding.internal;
 
 public class Snake {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Snake(){
+        System.out.println("no-arg constructor for Snake");
     }
 
 }

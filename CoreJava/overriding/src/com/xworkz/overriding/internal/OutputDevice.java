@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class OutputDevice {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public OutputDevice(){
+        System.out.println("no-arg constructor for OutputDevice");
     }
 }

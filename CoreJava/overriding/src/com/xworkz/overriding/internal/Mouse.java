@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Mouse {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Mouse extends InputDevice{
+    public Mouse(){
+        System.out.println("no-arg constructor for Mouse");
     }
 }

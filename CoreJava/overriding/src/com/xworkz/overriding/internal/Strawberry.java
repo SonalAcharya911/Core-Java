@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Strawberry {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Strawberry extends Berry{
+    public Strawberry(){
+        System.out.println("no-arg constructor for Strawberry");
     }
 }

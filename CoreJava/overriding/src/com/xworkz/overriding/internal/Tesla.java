@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Tesla {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Tesla extends Scientist{
+    public Tesla(){
+        System.out.println("no-arg constructor for Tesla");
     }
 }

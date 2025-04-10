@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class CreditCard {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class CreditCard extends Card{
+    public CreditCard(){
+        System.out.println("no-arg constructor for CreditCard");
     }
 }

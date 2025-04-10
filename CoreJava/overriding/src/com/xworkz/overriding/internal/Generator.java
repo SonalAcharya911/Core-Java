@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Generator {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Generator extends Backup{
+    public Generator(){
+        System.out.println("no-arg constructor for Generator");
     }
 }

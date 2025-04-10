@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Net {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Net extends Trap{
+    public Net(){
+        System.out.println("no-arg constructor for Net");
     }
 }

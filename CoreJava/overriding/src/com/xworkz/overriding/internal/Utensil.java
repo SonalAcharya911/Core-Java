@@ -1,8 +1,8 @@
 package com.xworkz.overriding.internal;
 
 public class Utensil {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Utensil(){
+        System.out.println("no-arg constructor for Utensil");
     }
 
 }

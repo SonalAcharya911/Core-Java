@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Fabric {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Fabric(){
+        System.out.println("no-arg constructor for Fabric");
     }
 }

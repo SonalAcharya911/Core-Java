@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Jupiter {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Jupiter extends Planet{
+    public Jupiter(){
+        System.out.println("no-arg constructor for Jupiter");
     }
 }

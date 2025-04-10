@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Witch {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Witch(){
+        System.out.println("no-arg constructor for Witch");
     }
 }

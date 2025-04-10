@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class CPU {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class CPU extends Processor{
+    public CPU(){
+        System.out.println("no-arg constructor for CPU");
     }
 }

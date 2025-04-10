@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class PenPencil {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class PenPencil extends Pencil{
+    public PenPencil(){
+        System.out.println("no-arg constructor for PenPencil");
     }
 }

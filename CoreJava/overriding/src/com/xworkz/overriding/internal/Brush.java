@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Brush {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Brush(){
+        System.out.println("no-arg constructor for Brush");
     }
 }

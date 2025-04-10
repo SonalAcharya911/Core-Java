@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Monitor {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Monitor extends OutputDevice{
+    public Monitor(){
+        System.out.println("no-arg constructor for Monitor");
     }
 }

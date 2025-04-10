@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Battery {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Battery extends PowerSource{
+    public Battery(){
+        System.out.println("no-arg constructor for Battery");
     }
 }

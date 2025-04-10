@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Mammal {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Mammal(){
+        System.out.println("no-arg constructor for Mammal");
     }
 }

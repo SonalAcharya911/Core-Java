@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Scooter {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Scooter extends Ride{
+    public Scooter(){
+        System.out.println("no-arg constructor for Scooter");
     }
 }

@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Plate {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Plate(){
+        System.out.println("no-arg constructor for Plate");
     }
 }

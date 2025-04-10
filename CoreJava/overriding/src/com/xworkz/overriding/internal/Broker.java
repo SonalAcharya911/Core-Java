@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Broker {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Broker extends Agent{
+    public Broker(){
+        System.out.println("no-arg constructor for Broker");
     }
 }

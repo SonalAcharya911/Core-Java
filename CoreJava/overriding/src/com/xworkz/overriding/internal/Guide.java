@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Guide {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Guide(){
+        System.out.println("no-arg constructor for Guide");
     }
 }

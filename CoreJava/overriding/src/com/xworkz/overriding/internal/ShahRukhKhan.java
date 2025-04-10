@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class ShahRukhKhan {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class ShahRukhKhan extends Actor{
+    public ShahRukhKhan(){
+        System.out.println("no-arg constructor for ShahRukhKhan");
     }
 }

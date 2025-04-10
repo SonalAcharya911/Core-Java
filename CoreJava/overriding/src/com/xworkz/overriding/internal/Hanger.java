@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Hanger {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Hanger extends Holder{
+    public Hanger(){
+        System.out.println("no-arg constructor for Hanger");
     }
 }

@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class LivingRoom {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class LivingRoom extends Room{
+    public LivingRoom(){
+        System.out.println("no-arg constructor for LivingRoom");
     }
 }

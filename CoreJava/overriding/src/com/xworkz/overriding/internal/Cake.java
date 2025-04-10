@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Cake {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Cake extends Dessert{
+    public Cake(){
+        System.out.println("no-arg constructor for Cake");
     }
 }

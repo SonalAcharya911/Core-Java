@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
 public class Composer {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+    public Composer(){
+        System.out.println("no-arg constructor for Composer");
     }
 }

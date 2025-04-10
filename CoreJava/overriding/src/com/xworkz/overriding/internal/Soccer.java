@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Soccer {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Soccer extends OutdoorGame{
+    public Soccer(){
+        System.out.println("no-arg constructor for Soccer");
     }
 }

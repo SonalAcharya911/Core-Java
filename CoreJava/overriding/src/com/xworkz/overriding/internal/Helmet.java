@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Helmet {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Helmet extends Protector{
+    public Helmet(){
+        System.out.println("no-arg constructor for Helmet");
     }
 }

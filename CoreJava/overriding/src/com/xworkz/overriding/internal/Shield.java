@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Shield {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Shield extends Armor{
+    public Shield(){
+        System.out.println("no-arg constructor for Shield");
     }
 }

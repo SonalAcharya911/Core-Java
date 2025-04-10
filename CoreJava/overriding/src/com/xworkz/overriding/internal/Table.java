@@ -1,8 +1,8 @@
 package com.xworkz.overriding.internal;
 
-public class Table {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Table extends Furniture{
+    public Table(){
+        System.out.println("no-arg constructor for Table");
     }
 
 }

@@ -1,7 +1,7 @@
 package com.xworkz.overriding.internal;
 
-public class Tuna {
-    public Actor(){
-        System.out.println("no-arg constructor for Actor");
+public class Tuna extends Fish{
+    public Tuna(){
+        System.out.println("no-arg constructor for Tuna");
     }
 }
