@@ -1,7 +1,7 @@
 package com.xworkz.acquired.internal;
 
 public class Security {
-    public Security(){
+    protected Security(){
         System.out.println("no-arg constructor for Security");
     }
 }

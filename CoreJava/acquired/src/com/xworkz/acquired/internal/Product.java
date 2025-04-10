@@ -1,7 +1,7 @@
 package com.xworkz.acquired.internal;
 
 public class Product {
-    public Product(){
+    protected Product(){
         System.out.println("no-arg constructor for Product");
     }
 }

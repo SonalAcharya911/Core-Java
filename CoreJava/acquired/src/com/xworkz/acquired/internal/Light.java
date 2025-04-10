@@ -1,7 +1,7 @@
 package com.xworkz.acquired.internal;
 
 public class Light {
-    public Light(){
+    protected Light(){
         System.out.println("no-arg constructor for Light");
     }
 }
