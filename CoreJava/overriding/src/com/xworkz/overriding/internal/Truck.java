@@ -4,4 +4,7 @@ public class Truck extends Vehicle{
     public Truck(){
         System.out.println("no-arg constructor for Truck");
     }
+    public void driveTruck() {
+        System.out.println("running driveTruck in Truck");
+    }
 }

@@ -4,4 +4,7 @@ public class Rolex extends Watch{
     public Rolex(){
         System.out.println("no-arg constructor for Rolex");
     }
+    public void wearRolex() {
+        System.out.println("running wearRolex in Rolex");
+    }
 }
