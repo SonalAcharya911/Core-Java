@@ -4,7 +4,7 @@ public class Herbivore {
     public Herbivore(){
         System.out.println("no-arg constructor for Herbivore");
     }
-    public void eatHerbivore() {
+    public void eat() {
         System.out.println("running eatHerbivore in Herbivore");
     }
 }

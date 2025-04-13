@@ -13,5 +13,6 @@ public class Sofa extends Furniture{
 
         Furniture furniture =new Furniture();
         Furniture furniture1=new Sofa();
+
     }
 }

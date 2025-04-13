@@ -7,4 +7,8 @@ public class FaceWash extends Cleanser{
     public void refresh() {
         System.out.println("running refresh in FaceWash");
     }
+
+    public void cleanFace(){
+        System.out.println("running cleanFace in FaceWash");
+    }
 }

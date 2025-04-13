@@ -7,5 +7,8 @@ public class CreditCard extends Card{
     public void swipe() {
         System.out.println("running swipe in CreditCard");
     }
+    public void drawMoney(){
+        System.out.println("running drawMoney in CreditCard");
+    }
 
 }

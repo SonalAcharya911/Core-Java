@@ -8,4 +8,8 @@ public class WandaMaximoff extends Witch{
     public void mindControl(){
         System.out.println("running mindControl in WandaMaximoff");
     }
+
+    public void readDarkhold(){
+        System.out.println("running readDarkhold in WandaMaximoff");
+    }
 }

@@ -7,7 +7,7 @@ public class Cow extends Herbivore{
     public void moo() {
         System.out.println("running moo in Cow");
     }
-    public void eatHerbivore() {
-        System.out.println("running eatHerbivore in Cow");
+    public void eat() {
+        System.out.println("running eat in Cow");
     }
 }

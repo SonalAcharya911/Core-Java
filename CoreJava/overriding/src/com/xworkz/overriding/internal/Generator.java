@@ -7,4 +7,7 @@ public class Generator extends Backup{
     public void store() {
         System.out.println("running store in Generator");
     }
+    public void generate(){
+        System.out.println("running generate in Generator");
+    }
 }

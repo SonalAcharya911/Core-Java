@@ -8,4 +8,8 @@ public class DSLR extends Camera{
         System.out.println("running capture in DSLR");
     }
 
+    public void clickPic(){
+        System.out.println("running clickPic in DSLR");
+    }
+
 }

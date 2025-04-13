@@ -7,4 +7,7 @@ public class Honda extends Brand{
     public void promote() {
         System.out.println("running promote in Honda");
     }
+    public void rideHonda(){
+        System.out.println("running rideHonda in Honda");
+    }
 }
