@@ -617,6 +617,9 @@ public class Runner {
         Planet planet = new Planet();
         Planet planet1 = new Jupiter();
         Jupiter jupiter = new Jupiter();
+        planet.rotatePlanet();
+        jupiter.observe();
+        jupiter.rotatePlanet();
 
         System.out.println("=================================");
         Oil oil = new Oil();
