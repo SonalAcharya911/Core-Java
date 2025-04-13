@@ -625,136 +625,219 @@ public class Runner {
         Oil oil = new Oil();
         Oil oil1 = new OliveOil();
         OliveOil oliveOil = new OliveOil();
+        oil.applyOil();
+        oliveOil.applyOil();
+        oliveOil.cookWithOliveOil();
 
         System.out.println("=================================");
         Jewellery jewellery = new Jewellery();
         Jewellery jewellery1 = new Necklace();
         Necklace necklace = new Necklace();
+        jewellery1.wearJewels();
+        necklace.wearJewels();
+        necklace.wearNecklace();
 
         System.out.println("=================================");
         Ornament ornament = new Ornament();
         Ornament ornament1 = new Ring();
         Ring ring = new Ring();
+        ornament.wearOrnament();
+        ring.wearOrnament();
+        ring.wearRing();
+
 
         System.out.println("=================================");
         Bird bird = new Bird();
         Bird bird1 = new Parrot();
         Parrot parrot = new Parrot();
+        bird.fly();
+        parrot.feedParrot();
+        parrot.fly();
 
         System.out.println("=================================");
         River river = new River();
         River river1 = new Nile();
         Nile nile = new Nile();
+        river.flow();
+        nile.flow();
+        nile.visitNile();
 
         System.out.println("=================================");
         Book book = new Book();
         Book book1 = new Novel();
         Novel novel = new Novel();
+        book.open();
+        novel.open();
+        novel.readNovel();
 
         System.out.println("=================================");
         Protector protector = new Protector();
         Protector protector1 = new Helmet();
         Helmet helmet = new Helmet();
+        protector1.wearProtector();
+        helmet.helmet();
+        helmet.wearProtector();
 
         System.out.println("=================================");
         Lamp lamp = new Lamp();
         Lamp lamp1 = new Lantern();
         Lantern lantern = new Lantern();
+        lamp.light();
+        lantern.lightLantern();
+        lantern.light();
 
         System.out.println("=================================");
         BodyWash bodyWash = new BodyWash();
         BodyWash bodyWash1 = new Lux();
         Lux lux = new Lux();
+        bodyWash1.cleanse();
+        lux.cleanse();
+        lux.useLux();
 
         System.out.println("=================================");
         Shampoo shampoo = new Shampoo();
         Shampoo shampoo1 = new Dove();
         Dove dove = new Dove();
+        shampoo.useShampoo();
+        dove.lather();
+        dove.useShampoo();
+
 
         System.out.println("=================================");
         Pencil pencil = new Pencil();
         Pencil pencil1 = new PenPencil();
         PenPencil penPencil = new PenPencil();
+        pencil.usePencil();
+        penPencil.usePencil();
+        penPencil.writeWithPenPencil();
 
         System.out.println("=================================");
         Story story = new Story();
         Story story1 = new Othello();
         Othello othello = new Othello();
+        story.tellStory();
+        othello.playOthello();
+        othello.tellStory();
 
         System.out.println("=================================");
         Shape shape = new Shape();
         Shape shape1 = new Rectangle();
         Rectangle rectangle = new Rectangle();
+        shape.drawShape();
+        rectangle.drawRectangle();
+        rectangle.drawShape();
 
         System.out.println("=================================");
         Serum serum = new Serum();
         Serum serum1 = new VitaminC();
         VitaminC vitaminC = new VitaminC();
+        serum.applySerum();
+        vitaminC.applySerum();
+        vitaminC.takeSupplement();
 
         System.out.println("=================================");
         Mentor mentor = new Mentor();
         Mentor mentor1 = new Coach();
         Coach coach = new Coach();
+        mentor.guideMentor();
+        coach.guideMentor();
+        coach.train();
 
         System.out.println("=================================");
         Guide guide = new Guide();
         Guide guide1 = new Teacher();
         Teacher teacher = new Teacher();
+        guide.guide();
+        teacher.teach();
+        teacher.guide();
 
         System.out.println("=================================");
         Student student = new Student();
         Student student1 = new Pupil();
         Pupil pupil = new Pupil();
+        student.studyStudent();
+        pupil.dilatePupil();
+        pupil.studyStudent();
 
         System.out.println("=================================");
         Purse purse = new Purse();
         Purse purse1 = new Wallet();
         Wallet wallet = new Wallet();
+        purse.carryPurse();
+        wallet.carryPurse();
+        wallet.keepMoney();
 
         System.out.println("=================================");
         HairStyle hairstyle = new HairStyle();
         HairStyle hairstyle1 = new Pony();
         Pony pony = new Pony();
+        hairstyle1.style();
+        pony.style();
+        pony.tiePony();
 
         System.out.println("=================================");
         Device device = new Device();
         Device device1 = new Microscope();
         Microscope microscope = new Microscope();
+        device1.useDevice();
+        microscope.useDevice();
+        microscope.useMicroscope();
 
         System.out.println("=================================");
         Road road = new Road();
         Road road1 = new Highway();
         Highway highway = new Highway();
+        road.travelRoad();
+        highway.drive();
+        highway.travelRoad();
 
         System.out.println("=================================");
         Watch watch = new Watch();
         Watch watch1 = new Rolex();
         Rolex rolex = new Rolex();
+        watch.viewTime();
+        rolex.viewTime();
+        rolex.wearRolex();
 
         System.out.println("=================================");
         Text text = new Text();
         Text text1 = new Message();
         Message message = new Message();
+        text.sendText();
+        message.sendMessage();
+        message.sendText();
 
         System.out.println("=================================");
         House house = new House();
         House house1 = new Villa();
         Villa villa = new Villa();
+        house.build();
+        villa.build();
+        villa.live();
 
         System.out.println("=================================");
         Ride ride = new Ride();
         Ride ride1 = new Scooter();
         Scooter scooter = new Scooter();
+        ride.goRide();
+        scooter.goRide();
+        scooter.rideScooter();
 
         System.out.println("=================================");
         Scientist scientist = new Scientist();
         Scientist scientist1 = new Tesla();
         Tesla tesla = new Tesla();
+        scientist1.researchScientist();
+        tesla.invent();
+        tesla.researchScientist();
 
         System.out.println("=================================");
         Vehicle vehicle = new Vehicle();
         Vehicle vehicle1 = new Truck();
         Truck truck = new Truck();
+        vehicle.repair();
+        truck.driveTruck();
+        truck.repair();
 
 
 
