@@ -1183,7 +1183,7 @@ public class TypeCasting {
         }
     }
 
-    public void applyFace(Serum serum) {
+    public void applyOnFace(Serum serum) {
         if(serum != null) {
             serum.applySerum();
 
