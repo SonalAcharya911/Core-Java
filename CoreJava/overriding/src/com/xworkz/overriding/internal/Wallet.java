@@ -7,4 +7,8 @@ public class Wallet extends Purse{
     public void carryPurse() {
         System.out.println("running carryPurse in Wallet");
     }
+
+    public void keepMoney(){
+        System.out.println("running keepMoney in Wallet");
+    }
 }

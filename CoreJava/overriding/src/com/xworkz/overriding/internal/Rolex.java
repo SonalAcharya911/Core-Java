@@ -7,4 +7,7 @@ public class Rolex extends Watch{
     public void wearRolex() {
         System.out.println("running wearRolex in Rolex");
     }
+    public void viewTime(){
+        System.out.println(" running viewTime in Rolex");
+    }
 }

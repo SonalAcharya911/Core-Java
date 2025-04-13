@@ -7,4 +7,7 @@ public class VandeBharath extends Train{
     public void rideTrain() {
         System.out.println("running rideTrain in VandeBharath");
     }
+    public void orderFood(){
+        System.out.println("running orderFood in VandeBharath ");
+    }
 }

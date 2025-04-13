@@ -8,4 +8,7 @@ public class Yellow extends Color{
     public void blend() {
         System.out.println("running blend in Yellow");
     }
+    public void shade(){
+        System.out.println("running shade in Yellow");
+    }
 }

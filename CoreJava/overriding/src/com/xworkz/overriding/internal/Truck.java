@@ -7,4 +7,7 @@ public class Truck extends Vehicle{
     public void driveTruck() {
         System.out.println("running driveTruck in Truck");
     }
+    public void repair(){
+        System.out.println("running repair in Truck");
+    }
 }

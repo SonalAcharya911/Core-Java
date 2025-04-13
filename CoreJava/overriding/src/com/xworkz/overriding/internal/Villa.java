@@ -7,4 +7,7 @@ public class Villa extends House{
     public void build() {
         System.out.println("running build in Villa");
     }
+    public void live(){
+        System.out.println("running live in Villa");
+    }
 }

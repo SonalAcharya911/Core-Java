@@ -8,4 +8,8 @@ public class DoctorStrange extends Wizard{
     public void castSpell() {
         System.out.println("running castSpell in DoctorStrange");
     }
+
+    public void performMagic(){
+        System.out.println("running performMagic in Wizard");
+    }
 }

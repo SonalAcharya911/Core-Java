@@ -7,4 +7,7 @@ public class Capsicum extends Vegetable{
     public void cook() {
         System.out.println("running cook in Capsicum");
     }
+    public void grate(){
+        System.out.println("running grate in Capsicum");
+    }
 }

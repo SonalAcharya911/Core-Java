@@ -7,4 +7,7 @@ public class Umbrella extends Cover{
     public void shield() {
         System.out.println("running shield in Umbrella");
     }
+    public void hold(){
+        System.out.println("running hold in Umbrella");
+    }
 }

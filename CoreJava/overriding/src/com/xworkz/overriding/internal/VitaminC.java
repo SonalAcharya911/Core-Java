@@ -7,4 +7,8 @@ public class VitaminC extends Serum{
     public void applySerum() {
         System.out.println("running applySerum in VitaminC");
     }
+
+    public void takeSupplement(){
+        System.out.println("running takeSupplement in VitaminC");
+    }
 }
