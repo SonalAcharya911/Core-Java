@@ -1,6 +1,6 @@
 package com.xworkz.overriding.external;
 
-public class Inverter extends Generator{
+public class Inverter extends GeneratorDupe {
     public Inverter(){
         System.out.println("no-arg constructor of Inverter");
     }

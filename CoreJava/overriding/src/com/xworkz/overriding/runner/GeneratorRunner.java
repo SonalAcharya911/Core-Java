@@ -1,14 +1,14 @@
 package com.xworkz.overriding.runner;
 
-import com.xworkz.overriding.external.Generator;
+import com.xworkz.overriding.external.GeneratorDupe;
 import com.xworkz.overriding.external.Inverter;
 
 public class GeneratorRunner {
     public static void main(String[] args) {
-        Generator generator=new Generator();
+        GeneratorDupe generator=new GeneratorDupe();
         generator.generate();
 
-        Generator generator1=new Inverter();
+        GeneratorDupe generator1=new Inverter();
         generator1.generate();
         Inverter inverter=new Inverter();
         inverter.generate();

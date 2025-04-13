@@ -342,6 +342,7 @@ public class Runner {
         prey.avoidPredator();
         prey1.avoidPredator();
         deer.avoidPredator();
+        deer.leap();
 
         System.out.println("=================================");
         Predator predator = new Predator();
@@ -595,6 +596,7 @@ public class Runner {
         Soccer soccer = new Soccer();
         outdoorGame1.enjoyOutdoorGame();
         soccer.enjoyOutdoorGame();
+        soccer.playSoccer();
 
 
         System.out.println("=================================");
@@ -669,6 +671,7 @@ public class Runner {
         book.open();
         novel.open();
         novel.readNovel();
+
 
         System.out.println("=================================");
         Protector protector = new Protector();
