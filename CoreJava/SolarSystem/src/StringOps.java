@@ -115,13 +115,6 @@ public class StringOps {
                 }
             }
             System.out.println(chars[j] + " is repeated " + count + " times");
-
         }
-
-
     }
-
-
-
-
 }

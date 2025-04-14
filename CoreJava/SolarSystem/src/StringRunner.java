@@ -30,6 +30,5 @@ public class StringRunner {
         stringOps.replaceSpace(sentence);
         stringOps.checkWordFrequency(sentence1);
         stringOps.checkCharFrequency("Sonal Vinod Karma ");
-
     }
 }
