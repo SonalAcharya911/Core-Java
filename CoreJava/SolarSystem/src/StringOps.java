@@ -117,4 +117,18 @@ public class StringOps {
             System.out.println(chars[j] + " is repeated " + count + " times");
         }
     }
+
+    public void checkPalindrome(String word){
+        String revString="";
+        char[] arr=word.toCharArray();
+        for(int i=arr.length-1;i>=0;i--){
+            revString=revString+word.charAt(i);
+        }
+
+        if(word.equals(revString)){
+            System.out.println(word+" is a  palindrome");
+        }else {
+            System.out.println(word+" is not a palindrome");
+        }
+    }
 }
