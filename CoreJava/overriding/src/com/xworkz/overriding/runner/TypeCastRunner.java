@@ -6,82 +6,82 @@ import javafx.util.Builder;
 
 public class TypeCastRunner {
     public static void main(String[] args) {
-        TypeCasting typeCasting=new TypeCasting();
+        TypeCasting typeCasting = new TypeCasting();
 
 
-        Actor actor =new Actor();
-        ShahRukhKhan shahRukhKhan=new ShahRukhKhan();
+        Actor actor = new Actor();
+        ShahRukhKhan shahRukhKhan = new ShahRukhKhan();
 
         typeCasting.increaseFans(actor);
         typeCasting.increaseFans(shahRukhKhan);
 
         System.out.println("==================================");
-        Actress actress=new Actress();
-        Deepika deepika=new Deepika();
+        Actress actress = new Actress();
+        Deepika deepika = new Deepika();
 
         typeCasting.giveAudition(actress);
         typeCasting.giveAudition(deepika);
 
         System.out.println("==================================");
 
-        Agent agent=new Agent();
-        Broker broker=new Broker();
+        Agent agent = new Agent();
+        Broker broker = new Broker();
 
         typeCasting.bookHouse(broker);
         typeCasting.bookHouse(agent);
         System.out.println("==================================");
 
-        Notification notification=new Notification();
-        Alarm alarm=new Alarm();
+        Notification notification = new Notification();
+        Alarm alarm = new Alarm();
 
         typeCasting.triggerAlert(notification);
         typeCasting.triggerAlert(alarm);
         System.out.println("==================================");
 
-        Software software=new Software();
-        Antivirus antivirus=new Antivirus();
+        Software software = new Software();
+        Antivirus antivirus = new Antivirus();
 
         typeCasting.runScan(software);
         typeCasting.runScan(antivirus);
         System.out.println("==================================");
 
-        Armor armor=new Armor();
-        Shield shield=new Shield();
+        Armor armor = new Armor();
+        Shield shield = new Shield();
 
         typeCasting.blockAttack(armor);
         typeCasting.blockAttack(shield);
         System.out.println("==================================");
 
-        Author author=new Author();
-        Shakespeare shakespeare=new Shakespeare();
+        Author author = new Author();
+        Shakespeare shakespeare = new Shakespeare();
 
         typeCasting.writePlay(author);
         typeCasting.writePlay(shakespeare);
         System.out.println("==================================");
 
-        Backup backup=new Backup();
-        Generator generator=new Generator();
+        Backup backup = new Backup();
+        Generator generator = new Generator();
 
         typeCasting.startBackup(backup);
         typeCasting.startBackup(generator);
         System.out.println("==================================");
 
-        Carrier carrier=new Carrier();
-        Basket basket=new Basket();
+        Carrier carrier = new Carrier();
+        Basket basket = new Basket();
 
         typeCasting.storeGoods(carrier);
         typeCasting.storeGoods(basket);
         System.out.println("==================================");
 
-        PowerSource powerSource=new PowerSource();
-        Battery battery=new Battery();
+        PowerSource powerSource = new PowerSource();
+        Battery battery = new Battery();
 
         typeCasting.chargeDevice(powerSource);
         typeCasting.chargeDevice(battery);
         System.out.println("==================================");
 
-        Composer composer=new Composer();
-        Beethoven beethoven=new Beethoven();
+        Composer composer = new Composer();
+        Beethoven beethoven = new Beethoven();
 
         typeCasting.playSymphony(composer);
         typeCasting.playSymphony(beethoven);
