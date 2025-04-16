@@ -842,6 +842,14 @@ public class Runner {
         truck.driveTruck();
         truck.repair();
 
+        System.out.println("=================================");
+        Mammal mammal=new Mammal();
+        Mammal mammal1=new Monkey();
+        Monkey monkey=new Monkey();
+        mammal.identifyMammal();
+        mammal1.identifyMammal();
+        monkey.swingMonkey();
+        monkey.identifyMammal();
 
 
     }
