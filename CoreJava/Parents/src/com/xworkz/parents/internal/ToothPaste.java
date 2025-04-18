@@ -22,9 +22,9 @@ public class ToothPaste {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj!=null && obj instanceof ToothPaste){
-            ToothPaste toothPaste=(ToothPaste) obj;
-            if(Objects.equals(this.brand,toothPaste.brand) && Objects.equals(this.minty,toothPaste.minty) && Objects.equals(this.cost,toothPaste.cost) && Objects.equals(this.color,toothPaste.color)){
+        if (obj != null && obj instanceof ToothPaste) {
+            ToothPaste toothPaste = (ToothPaste) obj;
+            if (Objects.equals(this.brand, toothPaste.brand) && Objects.equals(this.minty, toothPaste.minty) && Objects.equals(this.cost, toothPaste.cost) && Objects.equals(this.color, toothPaste.color)) {
                 System.out.println("toothPaste  is matching");
                 return true;
             }
