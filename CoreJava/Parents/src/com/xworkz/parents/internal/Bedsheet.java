@@ -25,9 +25,9 @@ public class Bedsheet {
         if(obj!=null && obj instanceof Bedsheet)
         {
             Bedsheet bedsheet=(Bedsheet) obj;
-            if(Objects.equals(this.color,bedsheet.color)&& Objects.equals(this.cost,bedsheet.cost))
+            if(Objects.equals(this.color,bedsheet.color)&& Objects.equals(this.cost,bedsheet.cost)  && Objects.equals(this.material,bedsheet.material) && Objects.equals(this.size,bedsheet.size))
             {
-                System.out.println("bedsheet is matching..");
+                System.out.println("bedsheet is matching....");
                 return true;
             }
         }
