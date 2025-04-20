@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Basket {
     private String color;
     private String material;
@@ -20,6 +22,13 @@ public class Basket {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        if (obj != null && obj instanceof Basket) {
+            Basket basket = (Basket) obj;
+            if (Objects.equals(this.capacity,basket.capacity ) && Objects.equals(this.color, basket.color) && Objects.equals(this.price, basket.price) && Objects.equals(this.material, basket.material)) {
+                System.out.println("baskets are matching");
+                return true;
+            }
+        }
+        return false;
     }
 }
