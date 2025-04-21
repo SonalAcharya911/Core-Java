@@ -12,4 +12,9 @@ public class Fridge {
         this.hasFreezer = hasFreezer;
         this.powerConsumption = powerConsumption;
     }
+
+    @Override
+    public String toString() {
+        return "brand: " + brand + "capacity: " + capacity + "hasFreezer: " + hasFreezer + "powerConsumption: " + powerConsumption;
+    }
 }

@@ -12,4 +12,9 @@ public class Dustbin {
         this.shape = shape;
         this.hasLid = hasLid;
     }
+
+    @Override
+    public String toString() {
+        return "capacity: " + capacity + "color: " + color + "shape: " + shape + "hasLid: " + hasLid;
+    }
 }

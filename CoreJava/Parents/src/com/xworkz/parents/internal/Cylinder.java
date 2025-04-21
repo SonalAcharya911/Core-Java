@@ -12,4 +12,9 @@ public class Cylinder {
         this.capacity = capacity;
         this.isSealed = isSealed;
     }
+
+    @Override
+    public String toString() {
+        return "height: " + height + "radius: " + radius + "capacity: " + capacity + "isSealed: " + isSealed;
+    }
 }

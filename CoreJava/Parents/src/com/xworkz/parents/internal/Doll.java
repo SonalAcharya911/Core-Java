@@ -13,4 +13,8 @@ public class Doll {
         this.hasDress = hasDress;
     }
 
+    @Override
+    public String toString() {
+        return "name: " + name + "height: " + height + "material: " + material + "hasDress: " + hasDress;
+    }
 }

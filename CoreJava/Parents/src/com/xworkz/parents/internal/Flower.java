@@ -13,4 +13,8 @@ public class Flower {
         this.hasFragrance = hasFragrance;
     }
 
+    @Override
+    public String toString() {
+        return "color: " + color + "type: " + type + "petalCount: " + petalCount + "hasFragrance: " + hasFragrance;
+    }
 }

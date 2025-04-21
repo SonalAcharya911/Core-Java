@@ -13,4 +13,8 @@ public class Drawer {
         this.hasLock = hasLock;
     }
 
+    @Override
+    public String toString() {
+        return "material: " + material + "numberOfCompartments: " + numberOfCompartments + "color: " + color + "hasLock: " + hasLock;
+    }
 }
