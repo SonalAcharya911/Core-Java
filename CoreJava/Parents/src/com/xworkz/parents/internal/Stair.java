@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Stair {
     private int stepCount;
     private String material;
@@ -20,6 +22,23 @@ public class Stair {
 
     public void setStepCount(int stepCount) {
         this.stepCount = stepCount;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null && obj instanceof Stair)
+        {
+            Stair stair = (Stair) obj;
+            if(Objects.equals(this.stepCount, stair.stepCount)
+                    && Objects.equals(this.material, stair.material)
+                    && Objects.equals(this.height, stair.height)
+                    && Objects.equals(this.hasRailing, stair.hasRailing))
+            {
+                System.out.println("stair is matching....");
+                return true;
+            }
+        }
+        return false;
     }
 
 }

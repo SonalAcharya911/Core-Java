@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Salt {
     private String type;
     private int weight;
@@ -21,5 +23,23 @@ public class Salt {
     public void setIodized(boolean iodized) {
         isIodized = iodized;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null && obj instanceof Salt)
+        {
+            Salt salt = (Salt) obj;
+            if(Objects.equals(this.type, salt.type)
+                    && Objects.equals(this.weight, salt.weight)
+                    && Objects.equals(this.isIodized, salt.isIodized)
+                    && Objects.equals(this.brand, salt.brand))
+            {
+                System.out.println("salt is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

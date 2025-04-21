@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Soap {
     private String fragrance;
     private int weight;
@@ -21,5 +23,23 @@ public class Soap {
     public void setFragrance(String fragrance) {
         this.fragrance = fragrance;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null && obj instanceof Soap)
+        {
+            Soap soap = (Soap) obj;
+            if(Objects.equals(this.fragrance, soap.fragrance)
+                    && Objects.equals(this.weight, soap.weight)
+                    && Objects.equals(this.color, soap.color)
+                    && Objects.equals(this.isAntibacterial, soap.isAntibacterial))
+            {
+                System.out.println("soap is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

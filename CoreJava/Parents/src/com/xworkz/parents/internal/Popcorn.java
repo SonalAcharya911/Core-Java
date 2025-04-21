@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Popcorn {
     private String flavor;
     private int weight;
@@ -21,5 +23,21 @@ public class Popcorn {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Popcorn) {
+            Popcorn popcorn = (Popcorn) obj;
+            if (Objects.equals(this.flavor, popcorn.flavor) &&
+                    Objects.equals(this.weight, popcorn.weight) &&
+                    Objects.equals(this.isSalted, popcorn.isSalted) &&
+                    Objects.equals(this.isButtered, popcorn.isButtered)) {
+                System.out.println("Popcorn is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

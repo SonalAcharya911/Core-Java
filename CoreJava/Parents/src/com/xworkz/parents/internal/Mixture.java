@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Mixture {
     private String brand;
     private int capacity;
@@ -21,5 +23,21 @@ public class Mixture {
     public void setElectric(boolean electric) {
         isElectric = electric;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Mixture) {
+            Mixture mixture = (Mixture) obj;
+            if (Objects.equals(this.brand, mixture.brand) &&
+                    Objects.equals(this.capacity, mixture.capacity) &&
+                    Objects.equals(this.isElectric, mixture.isElectric) &&
+                    Objects.equals(this.color, mixture.color)) {
+                System.out.println("Mixture is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

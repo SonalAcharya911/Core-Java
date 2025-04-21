@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Drawer {
     private String material;
     private int numberOfCompartments;
@@ -17,4 +19,22 @@ public class Drawer {
     public String toString() {
         return "material: " + material + "numberOfCompartments: " + numberOfCompartments + "color: " + color + "hasLock: " + hasLock;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null && obj instanceof Drawer)
+        {
+            Drawer drawer = (Drawer) obj;
+            if(Objects.equals(this.material, drawer.material)
+                    && Objects.equals(this.numberOfCompartments, drawer.numberOfCompartments)
+                    && Objects.equals(this.color, drawer.color)
+                    && Objects.equals(this.hasLock, drawer.hasLock))
+            {
+                System.out.println("drawer is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

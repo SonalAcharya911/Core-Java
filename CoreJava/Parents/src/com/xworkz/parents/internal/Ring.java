@@ -1,5 +1,7 @@
 package com.xworkz.parents.internal;
 
+import java.util.Objects;
+
 public class Ring {
     private String material;
     private int size;
@@ -21,4 +23,20 @@ public class Ring {
     public void setSize(int size) {
         this.size = size;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Ring) {
+            Ring ring = (Ring) obj;
+            if (Objects.equals(this.material, ring.material) &&
+                    Objects.equals(this.size, ring.size) &&
+                    Objects.equals(this.color, ring.color) &&
+                    Objects.equals(this.hasStone, ring.hasStone)) {
+                System.out.println("Ring is matching....");
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
