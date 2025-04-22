@@ -25,6 +25,11 @@ public class Soap {
     }
 
     @Override
+    public String toString() {
+        return "fragrance: " + fragrance + "weight: " + weight + "color: " + color + "isAntibacterial: " + isAntibacterial;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Soap)
         {

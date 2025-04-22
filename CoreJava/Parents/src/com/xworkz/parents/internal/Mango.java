@@ -16,13 +16,15 @@ public class Mango {
     }
 
     @Override
+    public String toString() {
+        return "weight: " + weight + "color: " + color + "type: " + type + "isRipe: " + isRipe;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Mango) {
             Mango mango = (Mango) obj;
-            if (Objects.equals(this.weight, mango.weight) &&
-                    Objects.equals(this.color, mango.color) &&
-                    Objects.equals(this.type, mango.type) &&
-                    Objects.equals(this.isRipe, mango.isRipe)) {
+            if (Objects.equals(this.weight, mango.weight) && Objects.equals(this.color, mango.color) && Objects.equals(this.type, mango.type) && Objects.equals(this.isRipe, mango.isRipe)) {
                 System.out.println("Mango is matching....");
                 return true;
             }

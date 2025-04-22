@@ -25,6 +25,11 @@ public class Stair {
     }
 
     @Override
+    public String toString() {
+        return "stepCount: " + stepCount + "material: " + material + "height: " + height + "hasRailing: " + hasRailing;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Stair)
         {

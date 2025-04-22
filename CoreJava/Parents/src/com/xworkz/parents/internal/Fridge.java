@@ -24,10 +24,7 @@ public class Fridge {
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Fridge) {
             Fridge fridge = (Fridge) obj;
-            if (Objects.equals(this.brand, fridge.brand) &&
-                    Objects.equals(this.capacity, fridge.capacity) &&
-                    Objects.equals(this.hasFreezer, fridge.hasFreezer) &&
-                    Objects.equals(this.powerConsumption, fridge.powerConsumption)) {
+            if (Objects.equals(this.brand, fridge.brand) && Objects.equals(this.capacity, fridge.capacity) && Objects.equals(this.hasFreezer, fridge.hasFreezer) && Objects.equals(this.powerConsumption, fridge.powerConsumption)) {
                 System.out.println("Fridge is matching....");
                 return true;
             }

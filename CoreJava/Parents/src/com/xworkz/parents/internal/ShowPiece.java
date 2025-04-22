@@ -25,6 +25,11 @@ public class ShowPiece {
     }
 
     @Override
+    public String toString() {
+        return "material: " + material + "color: " + color + "type: " + type + "weight: " + weight;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof ShowPiece)
         {

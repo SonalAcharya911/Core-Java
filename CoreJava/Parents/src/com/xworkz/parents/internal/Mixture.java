@@ -25,13 +25,15 @@ public class Mixture {
     }
 
     @Override
+    public String toString() {
+        return "brand: " + brand + "capacity: " + capacity + "isElectric: " + isElectric + "color: " + color;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Mixture) {
             Mixture mixture = (Mixture) obj;
-            if (Objects.equals(this.brand, mixture.brand) &&
-                    Objects.equals(this.capacity, mixture.capacity) &&
-                    Objects.equals(this.isElectric, mixture.isElectric) &&
-                    Objects.equals(this.color, mixture.color)) {
+            if (Objects.equals(this.brand, mixture.brand) && Objects.equals(this.capacity, mixture.capacity) && Objects.equals(this.isElectric, mixture.isElectric) && Objects.equals(this.color, mixture.color)) {
                 System.out.println("Mixture is matching....");
                 return true;
             }

@@ -25,6 +25,11 @@ public class Stand {
     }
 
     @Override
+    public String toString() {
+        return "type: " + type + "material: " + material + "height: " + height + "isAdjustable: " + isAdjustable;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Stand)
         {

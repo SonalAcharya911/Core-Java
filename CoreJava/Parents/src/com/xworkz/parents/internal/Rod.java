@@ -29,10 +29,7 @@ public class Rod {
         if(obj != null && obj instanceof Rod)
         {
             Rod rod = (Rod) obj;
-            if(Objects.equals(this.length, rod.length)
-                    && Objects.equals(this.material, rod.material)
-                    && Objects.equals(this.weight, rod.weight)
-                    && Objects.equals(this.isHollow, rod.isHollow))
+            if(Objects.equals(this.length, rod.length) && Objects.equals(this.material, rod.material) && Objects.equals(this.weight, rod.weight) && Objects.equals(this.isHollow, rod.isHollow))
             {
                 System.out.println("rod is matching....");
                 return true;

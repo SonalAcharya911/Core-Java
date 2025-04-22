@@ -16,13 +16,15 @@ public class Hook {
     }
 
     @Override
+    public String toString() {
+        return "material: " + material + "length: " + length + "weightCapacity: " + weightCapacity + "isWallMounted: " + isWallMounted;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Hook) {
             Hook hook = (Hook) obj;
-            if (Objects.equals(this.material, hook.material) &&
-                    Objects.equals(this.length, hook.length) &&
-                    Objects.equals(this.weightCapacity, hook.weightCapacity) &&
-                    Objects.equals(this.isWallMounted, hook.isWallMounted)) {
+            if (Objects.equals(this.material, hook.material) && Objects.equals(this.length, hook.length) && Objects.equals(this.weightCapacity, hook.weightCapacity) && Objects.equals(this.isWallMounted, hook.isWallMounted)) {
                 System.out.println("Hook is matching....");
                 return true;
             }

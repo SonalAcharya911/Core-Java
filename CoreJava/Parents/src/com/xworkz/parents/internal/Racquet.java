@@ -24,6 +24,11 @@ public class Racquet {
     }
 
     @Override
+    public String toString() {
+        return "brand: " + brand + "weight: " + weight + "gripType: " + gripType + "isStringed: " + isStringed;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Racquet) {
             Racquet racquet = (Racquet) obj;

@@ -25,10 +25,7 @@ public class Drawer {
         if(obj != null && obj instanceof Drawer)
         {
             Drawer drawer = (Drawer) obj;
-            if(Objects.equals(this.material, drawer.material)
-                    && Objects.equals(this.numberOfCompartments, drawer.numberOfCompartments)
-                    && Objects.equals(this.color, drawer.color)
-                    && Objects.equals(this.hasLock, drawer.hasLock))
+            if(Objects.equals(this.material, drawer.material) && Objects.equals(this.numberOfCompartments, drawer.numberOfCompartments) && Objects.equals(this.color, drawer.color) && Objects.equals(this.hasLock, drawer.hasLock))
             {
                 System.out.println("drawer is matching....");
                 return true;

@@ -25,6 +25,11 @@ public class PhotoFrame {
     }
 
     @Override
+    public String toString() {
+        return "color: " + color + "material: " + material + "height: " + height + "width: " + width;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof PhotoFrame) {
             PhotoFrame photoFrame = (PhotoFrame) obj;

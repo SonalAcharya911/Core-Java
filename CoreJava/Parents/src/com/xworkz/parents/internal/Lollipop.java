@@ -16,13 +16,15 @@ public class Lollipop {
     }
 
     @Override
+    public String toString() {
+        return "flavor: " + flavor + "weight: " + weight + "color: " + color + "hasStick: " + hasStick;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Lollipop) {
             Lollipop lollipop = (Lollipop) obj;
-            if (Objects.equals(this.flavor, lollipop.flavor) &&
-                    Objects.equals(this.weight, lollipop.weight) &&
-                    Objects.equals(this.color, lollipop.color) &&
-                    Objects.equals(this.hasStick, lollipop.hasStick)) {
+            if (Objects.equals(this.flavor, lollipop.flavor) &&Objects.equals(this.weight, lollipop.weight) && Objects.equals(this.color, lollipop.color) && Objects.equals(this.hasStick, lollipop.hasStick)) {
                 System.out.println("Lollipop is matching....");
                 return true;
             }

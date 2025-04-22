@@ -26,10 +26,7 @@ public class Flower {
         if(obj != null && obj instanceof Flower)
         {
             Flower flower = (Flower) obj;
-            if(Objects.equals(this.color, flower.color)
-                    && Objects.equals(this.type, flower.type)
-                    && Objects.equals(this.petalCount, flower.petalCount)
-                    && Objects.equals(this.hasFragrance, flower.hasFragrance))
+            if(Objects.equals(this.color, flower.color) && Objects.equals(this.type, flower.type) && Objects.equals(this.petalCount, flower.petalCount) && Objects.equals(this.hasFragrance, flower.hasFragrance))
             {
                 System.out.println("flower is matching....");
                 return true;

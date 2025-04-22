@@ -25,10 +25,7 @@ public class Chocolate {
         if(obj != null && obj instanceof Chocolate)
         {
             Chocolate chocolate = (Chocolate) obj;
-            if(Objects.equals(this.flavor, chocolate.flavor)
-                    && Objects.equals(this.weight, chocolate.weight)
-                    && Objects.equals(this.isDark, chocolate.isDark)
-                    && Objects.equals(this.price, chocolate.price))
+            if(Objects.equals(this.flavor, chocolate.flavor) && Objects.equals(this.weight, chocolate.weight) && Objects.equals(this.isDark, chocolate.isDark) && Objects.equals(this.price, chocolate.price))
             {
                 System.out.println("chocolate is matching....");
                 return true;

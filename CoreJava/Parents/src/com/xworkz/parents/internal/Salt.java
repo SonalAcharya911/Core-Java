@@ -25,6 +25,11 @@ public class Salt {
     }
 
     @Override
+    public String toString() {
+        return "type: " + type + "weight: " + weight + "isIodized: " + isIodized + "brand: " + brand;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Salt)
         {

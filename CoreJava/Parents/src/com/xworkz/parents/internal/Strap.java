@@ -24,6 +24,12 @@ public class Strap {
     public void setLength(int length) {
         this.length = length;
     }
+
+    @Override
+    public String toString() {
+        return "material: " + material + "length: " + length + "color: " + color + "isAdjustable: " + isAdjustable;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Strap)

@@ -25,6 +25,11 @@ public class Popcorn {
     }
 
     @Override
+    public String toString() {
+        return "flavor: " + flavor + "weight: " + weight + "isSalted: " + isSalted + "isButtered: " + isButtered;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Popcorn) {
             Popcorn popcorn = (Popcorn) obj;
