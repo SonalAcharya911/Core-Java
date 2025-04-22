@@ -25,6 +25,11 @@ public class Ring {
     }
 
     @Override
+    public String toString() {
+        return "material: " + material + "size: " + size + "color: " + color + "hasStone: " + hasStone ;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Ring) {
             Ring ring = (Ring) obj;

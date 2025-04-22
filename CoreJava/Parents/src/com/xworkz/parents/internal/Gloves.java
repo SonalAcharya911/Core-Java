@@ -24,10 +24,7 @@ public class Gloves {
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Gloves) {
             Gloves gloves = (Gloves) obj;
-            if (Objects.equals(this.size, gloves.size) &&
-                    Objects.equals(this.material, gloves.material) &&
-                    Objects.equals(this.color, gloves.color) &&
-                    Objects.equals(this.isWaterproof, gloves.isWaterproof)) {
+            if (Objects.equals(this.size, gloves.size) && Objects.equals(this.material, gloves.material) && Objects.equals(this.color, gloves.color) && Objects.equals(this.isWaterproof, gloves.isWaterproof)) {
                 System.out.println("Gloves are matching....");
                 return true;
             }

@@ -25,6 +25,11 @@ public class Pouch {
     }
 
     @Override
+    public String toString() {
+        return "material: " + material + "color: " + color + "capacity: " + capacity + "hasZip: " + hasZip;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Pouch) {
             Pouch pouch = (Pouch) obj;

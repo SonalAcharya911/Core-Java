@@ -16,13 +16,15 @@ public class Lighter {
     }
 
     @Override
+    public String toString() {
+        return "color: " + color + "isRefillable: " + isRefillable + "weight: " + weight + "brand: " + brand;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Lighter) {
             Lighter lighter = (Lighter) obj;
-            if (Objects.equals(this.color, lighter.color) &&
-                    Objects.equals(this.isRefillable, lighter.isRefillable) &&
-                    Objects.equals(this.weight, lighter.weight) &&
-                    Objects.equals(this.brand, lighter.brand)) {
+            if (Objects.equals(this.color, lighter.color) && Objects.equals(this.isRefillable, lighter.isRefillable) && Objects.equals(this.weight, lighter.weight) && Objects.equals(this.brand, lighter.brand)) {
                 System.out.println("Lighter is matching....");
                 return true;
             }

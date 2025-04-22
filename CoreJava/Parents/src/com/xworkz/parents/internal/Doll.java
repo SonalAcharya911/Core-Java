@@ -25,10 +25,7 @@ public class Doll {
         if(obj != null && obj instanceof Doll)
         {
             Doll doll = (Doll) obj;
-            if(Objects.equals(this.name, doll.name)
-                    && Objects.equals(this.height, doll.height)
-                    && Objects.equals(this.material, doll.material)
-                    && Objects.equals(this.hasDress, doll.hasDress))
+            if(Objects.equals(this.name, doll.name) && Objects.equals(this.height, doll.height) && Objects.equals(this.material, doll.material) && Objects.equals(this.hasDress, doll.hasDress))
             {
                 System.out.println("doll is matching....");
                 return true;

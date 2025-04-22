@@ -25,10 +25,7 @@ public class Dustbin {
         if(obj != null && obj instanceof Dustbin)
         {
             Dustbin dustbin = (Dustbin) obj;
-            if(Objects.equals(this.capacity, dustbin.capacity)
-                    && Objects.equals(this.color, dustbin.color)
-                    && Objects.equals(this.shape, dustbin.shape)
-                    && Objects.equals(this.hasLid, dustbin.hasLid))
+            if(Objects.equals(this.capacity, dustbin.capacity) && Objects.equals(this.color, dustbin.color) && Objects.equals(this.shape, dustbin.shape) && Objects.equals(this.hasLid, dustbin.hasLid))
             {
                 System.out.println("dustbin is matching....");
                 return true;

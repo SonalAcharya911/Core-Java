@@ -16,13 +16,15 @@ public class HandBag {
     }
 
     @Override
+    public String toString() {
+        return "brand: " + brand + "color: " + color + "capacity: " + capacity + "hasZip: " + hasZip;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof HandBag) {
             HandBag handBag = (HandBag) obj;
-            if (Objects.equals(this.brand, handBag.brand) &&
-                    Objects.equals(this.color, handBag.color) &&
-                    Objects.equals(this.capacity, handBag.capacity) &&
-                    Objects.equals(this.hasZip, handBag.hasZip)) {
+            if (Objects.equals(this.brand, handBag.brand) && Objects.equals(this.color, handBag.color) && Objects.equals(this.capacity, handBag.capacity) && Objects.equals(this.hasZip, handBag.hasZip)) {
                 System.out.println("HandBag is matching....");
                 return true;
             }

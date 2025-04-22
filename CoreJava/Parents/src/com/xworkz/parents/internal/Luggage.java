@@ -16,13 +16,15 @@ public class Luggage {
     }
 
     @Override
+    public String toString() {
+        return "weight: " + weight + "color: " + color + "hasWheels: " + hasWheels + "brand: " + brand;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Luggage) {
             Luggage luggage = (Luggage) obj;
-            if (Objects.equals(this.weight, luggage.weight) &&
-                    Objects.equals(this.color, luggage.color) &&
-                    Objects.equals(this.hasWheels, luggage.hasWheels) &&
-                    Objects.equals(this.brand, luggage.brand)) {
+            if (Objects.equals(this.weight, luggage.weight) && Objects.equals(this.color, luggage.color) && Objects.equals(this.hasWheels, luggage.hasWheels) && Objects.equals(this.brand, luggage.brand)) {
                 System.out.println("Luggage is matching....");
                 return true;
             }

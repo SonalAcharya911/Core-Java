@@ -25,6 +25,11 @@ public class Sofa {
     }
 
     @Override
+    public String toString() {
+        return "color: " + color + "material: " + material + "seatCount: " + seatCount + "hasCushions: " + hasCushions;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(obj != null && obj instanceof Sofa)
         {

@@ -25,10 +25,7 @@ public class Cylinder {
         if(obj != null && obj instanceof Cylinder)
         {
             Cylinder cylinder = (Cylinder) obj;
-            if(Objects.equals(this.height, cylinder.height)
-                    && Objects.equals(this.radius, cylinder.radius)
-                    && Objects.equals(this.capacity, cylinder.capacity)
-                    && Objects.equals(this.isSealed, cylinder.isSealed))
+            if(Objects.equals(this.height, cylinder.height) && Objects.equals(this.radius, cylinder.radius) && Objects.equals(this.capacity, cylinder.capacity) && Objects.equals(this.isSealed, cylinder.isSealed))
             {
                 System.out.println("cylinder is matching....");
                 return true;

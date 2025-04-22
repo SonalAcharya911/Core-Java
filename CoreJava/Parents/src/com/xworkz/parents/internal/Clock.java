@@ -25,10 +25,7 @@ public class Clock {
         if(obj != null && obj instanceof Clock)
         {
             Clock clock = (Clock) obj;
-            if(Objects.equals(this.type, clock.type)
-                    && Objects.equals(this.brand, clock.brand)
-                    && Objects.equals(this.isDigital, clock.isDigital)
-                    && Objects.equals(this.diameter, clock.diameter))
+            if(Objects.equals(this.type, clock.type) && Objects.equals(this.brand, clock.brand) && Objects.equals(this.isDigital, clock.isDigital) && Objects.equals(this.diameter, clock.diameter))
             {
                 System.out.println("clock is matching....");
                 return true;

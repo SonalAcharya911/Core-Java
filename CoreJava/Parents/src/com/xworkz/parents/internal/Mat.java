@@ -16,13 +16,15 @@ public class Mat {
     }
 
     @Override
+    public String toString() {
+        return "material: " + material + "length: " + length + "width: " + width + "color: " + color;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Mat) {
             Mat mat = (Mat) obj;
-            if (Objects.equals(this.material, mat.material) &&
-                    Objects.equals(this.length, mat.length) &&
-                    Objects.equals(this.width, mat.width) &&
-                    Objects.equals(this.color, mat.color)) {
+            if (Objects.equals(this.material, mat.material) && Objects.equals(this.length, mat.length) && Objects.equals(this.width, mat.width) && Objects.equals(this.color, mat.color)) {
                 System.out.println("Mat is matching....");
                 return true;
             }
