@@ -5,8 +5,8 @@ import com.xworkz.internal.rule.*;
 
 public class InterfaceRunner {
     public static void main(String[] args) {
-        AirConditioner airConditioner=new LGAirConditionerImpl();
-        LGAirConditionerImpl lgAirConditioner=new LGAirConditionerImpl();
+        AirConditioner airConditioner = new LGAirConditionerImpl();
+        LGAirConditionerImpl lgAirConditioner = new LGAirConditionerImpl();
 
         airConditioner.cleanFilter();
         airConditioner.decreaseTemperature();
@@ -26,8 +26,8 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        ATM  atm=new UnionBankATMImpl();
-        UnionBankATMImpl unionBankATM=new UnionBankATMImpl();
+        ATM atm = new UnionBankATMImpl();
+        UnionBankATMImpl unionBankATM = new UnionBankATMImpl();
 
         atm.checkBalance();
         atm.depositCash();
@@ -47,24 +47,24 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Bell bell=new DoorBellImpl();
-        DoorBellImpl doorBell=new DoorBellImpl();
+        Bell bell = new DoorBellImpl();
+        DoorBellImpl doorBell = new DoorBellImpl();
 
         bell.ring();
         doorBell.ring();
 
         System.out.println("==========================");
 
-        Box box=new TiffinBoxImpl();
-        TiffinBoxImpl tiffinBox=new TiffinBoxImpl();
+        Box box = new TiffinBoxImpl();
+        TiffinBoxImpl tiffinBox = new TiffinBoxImpl();
 
         box.open();
         tiffinBox.open();
 
         System.out.println("==========================");
 
-        Car car=new HondaCarImpl();
-        HondaCarImpl hondaCar=new HondaCarImpl();
+        Car car = new HondaCarImpl();
+        HondaCarImpl hondaCar = new HondaCarImpl();
 
         car.accelerate();
         car.stop();
@@ -76,8 +76,8 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Chair chair=new EasyChairImpl();
-        EasyChairImpl easyChair=new EasyChairImpl();
+        Chair chair = new EasyChairImpl();
+        EasyChairImpl easyChair = new EasyChairImpl();
 
         chair.breakChair();
         chair.sit();
@@ -89,8 +89,8 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Computer computer=new LaptopImpl();
-        LaptopImpl laptop=new LaptopImpl();
+        Computer computer = new LaptopImpl();
+        LaptopImpl laptop = new LaptopImpl();
 
         computer.restart();
         computer.start();
@@ -102,8 +102,8 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Door door=new HouseDoorImpl();
-        HouseDoorImpl houseDoor=new HouseDoorImpl();
+        Door door = new HouseDoorImpl();
+        HouseDoorImpl houseDoor = new HouseDoorImpl();
 
         door.close();
         door.open();
@@ -115,7 +115,7 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Drone drone=new SecurityDroneImpl();
+        Drone drone = new SecurityDroneImpl();
         SecurityDroneImpl securityDrone = new SecurityDroneImpl();
 
         drone.flyBackward();
@@ -140,8 +140,8 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
-        Elevator elevator=new LiftImpl();
-        LiftImpl lift=new LiftImpl();
+        Elevator elevator = new LiftImpl();
+        LiftImpl lift = new LiftImpl();
 
         elevator.closeDoor();
         elevator.displayFloor();
