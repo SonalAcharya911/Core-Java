@@ -5,7 +5,7 @@ import com.xworkz.golden.internal.Atm;
 public class SbiAtm implements Atm {
 
     @Override
-    public void drawMoney() {
+    public void drawMoney(){
         System.out.println("running drawMoney in SbiAtm");
     }
 }

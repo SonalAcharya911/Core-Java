@@ -9,12 +9,11 @@ public class User {
         this.atm=atm;
     }
 
-    public void depositMoney(){
+    public void depositMoney() {
         System.out.println("running depositMoney in User");
-        if(this.atm!=null){
+        if (this.atm != null) {
             this.atm.drawMoney();
-        }
-        else{
+        } else {
             System.out.println("atm is null");
         }
     }
