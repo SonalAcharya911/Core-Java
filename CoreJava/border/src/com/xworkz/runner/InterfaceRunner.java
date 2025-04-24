@@ -1,13 +1,7 @@
 package com.xworkz.runner;
 
-import com.xworkz.external.impl.DoorBellImpl;
-import com.xworkz.external.impl.LGAirConditionerImpl;
-import com.xworkz.external.impl.TiffinBoxImpl;
-import com.xworkz.external.impl.UnionBankATMImpl;
-import com.xworkz.internal.rule.ATM;
-import com.xworkz.internal.rule.AirConditioner;
-import com.xworkz.internal.rule.Bell;
-import com.xworkz.internal.rule.Box;
+import com.xworkz.external.impl.*;
+import com.xworkz.internal.rule.*;
 
 public class InterfaceRunner {
     public static void main(String[] args) {
@@ -67,7 +61,104 @@ public class InterfaceRunner {
         box.open();
         tiffinBox.open();
 
+        System.out.println("==========================");
 
+        Car car=new HondaCarImpl();
+        HondaCarImpl hondaCar=new HondaCarImpl();
 
+        car.accelerate();
+        car.stop();
+        car.start();
+
+        hondaCar.accelerate();
+        hondaCar.start();
+        hondaCar.stop();
+
+        System.out.println("==========================");
+
+        Chair chair=new EasyChairImpl();
+        EasyChairImpl easyChair=new EasyChairImpl();
+
+        chair.breakChair();
+        chair.sit();
+        chair.move();
+
+        easyChair.breakChair();
+        easyChair.move();
+        easyChair.sit();
+
+        System.out.println("==========================");
+
+        Computer computer=new LaptopImpl();
+        LaptopImpl laptop=new LaptopImpl();
+
+        computer.restart();
+        computer.start();
+        computer.shutDown();
+
+        laptop.restart();
+        laptop.shutDown();
+        laptop.start();
+
+        System.out.println("==========================");
+
+        Door door=new HouseDoorImpl();
+        HouseDoorImpl houseDoor=new HouseDoorImpl();
+
+        door.close();
+        door.open();
+        door.knock();
+
+        houseDoor.close();
+        houseDoor.knock();
+        houseDoor.open();
+
+        System.out.println("==========================");
+
+        Drone drone=new SecurityDroneImpl();
+        SecurityDroneImpl securityDrone = new SecurityDroneImpl();
+
+        drone.flyBackward();
+        drone.land();
+        drone.flyForward();
+        drone.powerOn();
+        drone.takeOff();
+        drone.recordVideo();
+        drone.takePhoto();
+        drone.turnLeft();
+        drone.turnRight();
+
+        securityDrone.flyBackward();
+        securityDrone.flyForward();
+        securityDrone.land();
+        securityDrone.powerOn();
+        securityDrone.recordVideo();
+        securityDrone.takePhoto();
+        securityDrone.turnLeft();
+        securityDrone.turnRight();
+        securityDrone.takeOff();
+
+        System.out.println("==========================");
+
+        Elevator elevator=new LiftImpl();
+        LiftImpl lift=new LiftImpl();
+
+        elevator.closeDoor();
+        elevator.displayFloor();
+        elevator.emergencyStop();
+        elevator.goUp();
+        elevator.openDoor();
+        elevator.goDown();
+        elevator.ringBell();
+
+        lift.closeDoor();
+        lift.displayFloor();
+        lift.goUp();
+        lift.emergencyStop();
+        lift.goDown();
+        lift.ringBell();
+        lift.openDoor();
+
+        System.out.println("==========================");
     }
 }
