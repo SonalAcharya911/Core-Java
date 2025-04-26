@@ -329,6 +329,26 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Window window=new RoomWindowImpl();
+        RoomWindowImpl roomWindow=new RoomWindowImpl();
+
+        window.clean();
+        window.close();
+        window.dontBreakGlass();
+        window.open();
+        window.lock();
+        window.slide();
+        window.unlock();
+
+        roomWindow.clean();
+        roomWindow.close();
+        roomWindow.lock();
+        roomWindow.open();
+        roomWindow.slide();
+        roomWindow.dontBreakGlass();
+        roomWindow.unlock();
+
+
 
     }
 }
