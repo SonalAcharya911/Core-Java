@@ -270,5 +270,22 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Temple temple=new JagannathTempleImpl();
+        JagannathTempleImpl jagannathTemple=new JagannathTempleImpl();
+
+        temple.dontTakePics();
+        temple.dontUsePhone();
+        temple.offerFlowers();
+        temple.removeSlippers();
+        temple.tieHairs();
+
+        jagannathTemple.dontTakePics();
+        jagannathTemple.tieHairs();
+        jagannathTemple.dontUsePhone();
+        jagannathTemple.offerFlowers();
+        jagannathTemple.removeSlippers();
+
+        System.out.println("==========================");
+
     }
 }
