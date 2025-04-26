@@ -287,5 +287,21 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Video video=new MovieImpl();
+        MovieImpl movie=new MovieImpl();
+
+        video.increaseSpeed();
+        video.play();
+        video.pause();
+        video.stop();
+        video.record();
+
+        movie.increaseSpeed();
+        movie.pause();
+        movie.play();
+        movie.stop();
+        movie.record();
+
+        System.out.println("==========================");
     }
 }
