@@ -253,5 +253,22 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Radio radio=new RedFMImpl();
+        RedFMImpl redFM=new RedFMImpl();
+
+        radio.decreaseVolume();
+        radio.increaseVolume();
+        radio.tuneFrequency();
+        radio.turnOff();
+        radio.turnOn();
+
+        redFM.decreaseVolume();
+        redFM.increaseVolume();
+        redFM.tuneFrequency();
+        redFM.turnOff();
+        redFM.turnOn();
+
+        System.out.println("==========================");
+
     }
 }
