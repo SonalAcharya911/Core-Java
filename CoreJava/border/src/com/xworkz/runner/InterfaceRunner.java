@@ -303,5 +303,32 @@ public class InterfaceRunner {
         movie.record();
 
         System.out.println("==========================");
+
+        WashingMachine washingMachine=new SamsungWashingMachineImpl();
+        SamsungWashingMachineImpl samsungWashingMachine=new SamsungWashingMachineImpl();
+
+        washingMachine.cleanDrum();
+        washingMachine.startWash();
+        washingMachine.turnOn();
+        washingMachine.drainWater();
+        washingMachine.rinse();
+        washingMachine.fillWater();
+        washingMachine.setTimer();
+        washingMachine.spin();
+        washingMachine.turnOff();
+
+        samsungWashingMachine.cleanDrum();
+        samsungWashingMachine.startWash();
+        samsungWashingMachine.turnOn();
+        samsungWashingMachine.rinse();
+        samsungWashingMachine.drainWater();
+        samsungWashingMachine.fillWater();
+        samsungWashingMachine.setTimer();
+        samsungWashingMachine.spin();
+        samsungWashingMachine.turnOff();
+
+        System.out.println("==========================");
+
+
     }
 }
