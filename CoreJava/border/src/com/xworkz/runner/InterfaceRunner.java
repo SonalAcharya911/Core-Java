@@ -160,5 +160,36 @@ public class InterfaceRunner {
         lift.openDoor();
 
         System.out.println("==========================");
+
+        ExamCenter examCenter=new BoardExamImpl();
+        BoardExamImpl boardExam=new BoardExamImpl();
+
+        examCenter.writeExam();
+        boardExam.writeExam();
+
+        System.out.println("==========================");
+
+        HeadPhone headPhone=new AirpodsImpl();
+        AirpodsImpl airpods=new AirpodsImpl();
+
+        headPhone.connectBluetooth();
+        headPhone.decreaseVolume();
+        headPhone.powerOn();
+        headPhone.play();
+        headPhone.pause();
+        headPhone.increaseVolume();
+        headPhone.powerOff();
+
+        airpods.connectBluetooth();
+        airpods.decreaseVolume();
+        airpods.powerOff();
+        airpods.powerOn();
+        airpods.play();
+        airpods.increaseVolume();
+        airpods.pause();
+
+        System.out.println("==========================");
+
+
     }
 }
