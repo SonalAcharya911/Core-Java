@@ -245,7 +245,13 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Printer printer=new EpsonPrinterImpl();
+        EpsonPrinterImpl epsonPrinter=new EpsonPrinterImpl();
 
+        printer.print();
+        epsonPrinter.print();
+
+        System.out.println("==========================");
 
     }
 }
