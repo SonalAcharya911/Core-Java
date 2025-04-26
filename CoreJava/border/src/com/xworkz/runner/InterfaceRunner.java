@@ -347,8 +347,5 @@ public class InterfaceRunner {
         roomWindow.slide();
         roomWindow.dontBreakGlass();
         roomWindow.unlock();
-
-
-
     }
 }
