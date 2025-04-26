@@ -228,6 +228,23 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Oven oven=new MicrowaveOvenImpl();
+        MicrowaveOvenImpl microwaveOven=new MicrowaveOvenImpl();
+
+        oven.bake();
+        oven.clean();
+        oven.grill();
+        oven.stop();
+        oven.preheat();
+
+        microwaveOven.bake();
+        microwaveOven.grill();
+        microwaveOven.clean();
+        microwaveOven.stop();
+        microwaveOven.preheat();
+
+        System.out.println("==========================");
+
 
 
     }
