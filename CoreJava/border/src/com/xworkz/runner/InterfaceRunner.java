@@ -190,6 +190,45 @@ public class InterfaceRunner {
 
         System.out.println("==========================");
 
+        Lamp lamp=new BedLampImpl();
+        BedLampImpl bedLamp=new BedLampImpl();
+
+        lamp.light();
+        bedLamp.light();
+
+        System.out.println("==========================");
+
+        Light light=new TubeLightImpl();
+        TubeLightImpl tubeLight=new TubeLightImpl();
+
+        light.bend();
+        light.turnOff();
+        light.turnOn();
+
+        tubeLight.bend();
+        tubeLight.turnOff();
+        tubeLight.turnOn();
+
+        System.out.println("==========================");
+
+        Mobile mobile=new RealmeImpl();
+        RealmeImpl realme=new RealmeImpl();
+
+        mobile.browse();
+        mobile.call();
+        mobile.message();
+        mobile.turnOff();
+        mobile.turnOn();
+
+        realme.browse();
+        realme.call();
+        realme.message();
+        realme.turnOff();
+        realme.turnOn();
+
+        System.out.println("==========================");
+
+
 
     }
 }
