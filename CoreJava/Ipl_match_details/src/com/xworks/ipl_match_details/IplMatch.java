@@ -109,7 +109,7 @@ public class IplMatch {
 
         for (String word:arr){
             for(int i=0;i< arr.length;i++){
-
+                word.charAt(i);
             }
         }
 
