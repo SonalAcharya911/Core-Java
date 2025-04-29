@@ -83,23 +83,18 @@ public class IplMatch {
     }
 
     public void sentenceCase(String sentence){
-        String[] words=sentence.split("");
-        System.out.println(words[1]);
-        String output="";
+        String[] words = sentence.split(""); // Splits into characters
+        String output = "";
 
-        for(int index=0;index<words.length;index++){
-            if(words[index].equals(" ")){
-                index++;
-                words[index]=words[index].toUpperCase();
-
-
-
+        for (int index = 0; index < words.length; index++) {
+            if (index == 0 || words[index - 1].equals(" ")) {
+                words[index] = words[index].toUpperCase();
             }
-            output=output+" "+words[index];
-            System.out.println("dwgdhwghduewhdewh");
+
+            output = output + words[index]; // Add current character to output
         }
 
-        System.out.println(output+"==============");
+        System.out.println(output);
 
 
     }
