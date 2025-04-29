@@ -92,9 +92,11 @@ public class IplMatch {
                 index++;
                 words[index]=words[index].toUpperCase();
 
+
+
             }
             output=output+" "+words[index];
-            System.out.println();
+            System.out.println("dwgdhwghduewhdewh");
         }
 
         System.out.println(output+"==============");
@@ -104,6 +106,12 @@ public class IplMatch {
 
     public void abc(String str){
         String[] arr=str.split(" ");
+
+        for (String word:arr){
+            for(int i=0;i< arr.length;i++){
+
+            }
+        }
 
     }
 
