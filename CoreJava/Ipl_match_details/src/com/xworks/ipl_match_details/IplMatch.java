@@ -107,11 +107,7 @@ public class IplMatch {
     public void abc(String str){
         String[] arr=str.split(" ");
 
-        for (String word:arr){
-            for(int i=0;i< arr.length;i++){
-                word.charAt(i);
-            }
-        }
+
 
     }
 
