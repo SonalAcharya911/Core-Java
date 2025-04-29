@@ -12,5 +12,6 @@ public class IplMatchRunner {
         iplMatch.replaceVowel("you are welcome");
         System.out.println("\n");
         iplMatch.sentenceCase("Hi i am sonal");
+
     }
 }
