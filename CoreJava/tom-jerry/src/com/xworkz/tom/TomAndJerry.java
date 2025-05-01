@@ -10,4 +10,8 @@ public class TomAndJerry implements Cartoon{
     public void watch() {
         System.out.println("running watch in TomAndJerry");
     }
+
+    public static void main(String[] args) {
+
+    }
 }
