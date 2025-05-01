@@ -1,4 +1,4 @@
 package com.xworkz.tom;
 
-public class MyServlet extends GenericServlet{
+public class MyServlet implements GenericServlet{
 }
