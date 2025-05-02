@@ -7,7 +7,7 @@ public class PrimeNumberRunner {
         PrimeNumber primeNumber= new PrimeNumber() {
             @Override
             public void checkPrime() {
-
+                System.out.println("running checkPrime in PrimeNumberRunner");
             }
         };
     }
