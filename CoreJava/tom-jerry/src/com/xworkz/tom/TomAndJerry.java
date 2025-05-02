@@ -11,8 +11,8 @@ public class TomAndJerry implements Cartoon{
         System.out.println("running watch in TomAndJerry");
     }
 
-    public static void main(String[] args) {
-        System.out.println("running main");
-
-    }
+//    public static void main(String[] args) {
+//        System.out.println("running main");
+//
+//    }
 }
