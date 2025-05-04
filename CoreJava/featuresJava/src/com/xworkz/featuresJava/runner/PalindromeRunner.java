@@ -18,8 +18,7 @@ public class PalindromeRunner {
                 System.out.println("string is not palindrome");
             }
         };
-        String string="sonalanos";
-        System.out.println(string.charAt(8));
+
         palindrome.isPalindrome("malayalam");
     }
 }
