@@ -52,9 +52,15 @@ public class SmartRunner {
             public void connectToWiFi(String network) {
                 System.out.println("Connected to " + network);
             }
-            public void playMusic(String song) { System.out.println("Playing song: " + song); }
-            public void takePicture() { System.out.println("Captured a photo"); }
-            public void browseInternet() { System.out.println("Browsing..."); }
+            public void playMusic(String song) {
+                System.out.println("Playing song: " + song);
+            }
+            public void takePicture() {
+                System.out.println("Captured a photo");
+            }
+            public void browseInternet() {
+                System.out.println("Browsing...");
+            }
             public void increaseVolume() { System.out.println("Vol +"); }
             public void decreaseVolume() { System.out.println("Vol -"); }
             public void installApp(String appName) { System.out.println("App " + appName + " installed"); }
