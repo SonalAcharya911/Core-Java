@@ -16,10 +16,18 @@ public class SmartPhone implements SmartDevice {
         public void playMusic(String song) {
                 System.out.println("Playing song: " + song);
         }
-        public void takePicture() { System.out.println("Picture taken"); }
-        public void browseInternet() { System.out.println("Browsing the internet..."); }
-        public void increaseVolume() { System.out.println("Volume increased"); }
-        public void decreaseVolume() { System.out.println("Volume decreased"); }
+        public void takePicture() {
+                System.out.println("Picture taken");
+        }
+        public void browseInternet() {
+                System.out.println("Browsing the internet...");
+        }
+        public void increaseVolume() {
+                System.out.println("Volume increased");
+        }
+        public void decreaseVolume(){
+                System.out.println("Volume decreased");
+        }
         public void installApp(String appName) { System.out.println(appName + " installed"); }
         public void uninstallApp(String appName) { System.out.println(appName + " uninstalled"); }
 
