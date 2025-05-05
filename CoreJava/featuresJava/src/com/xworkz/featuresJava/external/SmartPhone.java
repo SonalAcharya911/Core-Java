@@ -28,7 +28,11 @@ public class SmartPhone implements SmartDevice {
         public void decreaseVolume(){
                 System.out.println("Volume decreased");
         }
-        public void installApp(String appName) { System.out.println(appName + " installed"); }
-        public void uninstallApp(String appName) { System.out.println(appName + " uninstalled"); }
+        public void installApp(String appName) {
+                System.out.println(appName + " installed");
+        }
+        public void uninstallApp(String appName) {
+                System.out.println(appName + " uninstalled");
+        }
 
 }
