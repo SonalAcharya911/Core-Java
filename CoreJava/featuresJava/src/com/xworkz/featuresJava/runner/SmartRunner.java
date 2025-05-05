@@ -61,8 +61,12 @@ public class SmartRunner {
             public void browseInternet() {
                 System.out.println("Browsing...");
             }
-            public void increaseVolume() { System.out.println("Vol +"); }
-            public void decreaseVolume() { System.out.println("Vol -"); }
+            public void increaseVolume() {
+                System.out.println("Vol +");
+            }
+            public void decreaseVolume() {
+                System.out.println("Vol -");
+            }
             public void installApp(String appName) { System.out.println("App " + appName + " installed"); }
             public void uninstallApp(String appName) { System.out.println("App " + appName + " removed"); }
         };
