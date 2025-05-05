@@ -43,9 +43,15 @@ public class SmartRunner {
 
         SmartDevice device = new SmartDevice() {
 
-            public void powerOn() { System.out.println("Anonymous device powered on"); }
-            public void powerOff() { System.out.println("Anonymous device powered off"); }
-            public void connectToWiFi(String network) { System.out.println("Connected to " + network); }
+            public void powerOn() {
+                System.out.println("Anonymous device powered on");
+            }
+            public void powerOff() {
+                System.out.println("Anonymous device powered off");
+            }
+            public void connectToWiFi(String network) {
+                System.out.println("Connected to " + network);
+            }
             public void playMusic(String song) { System.out.println("Playing song: " + song); }
             public void takePicture() { System.out.println("Captured a photo"); }
             public void browseInternet() { System.out.println("Browsing..."); }
