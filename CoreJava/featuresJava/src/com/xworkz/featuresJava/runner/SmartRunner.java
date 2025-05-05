@@ -67,8 +67,12 @@ public class SmartRunner {
             public void decreaseVolume() {
                 System.out.println("Vol -");
             }
-            public void installApp(String appName) { System.out.println("App " + appName + " installed"); }
-            public void uninstallApp(String appName) { System.out.println("App " + appName + " removed"); }
+            public void installApp(String appName) {
+                System.out.println("App " + appName + " installed");
+            }
+            public void uninstallApp(String appName) {
+                System.out.println("App " + appName + " removed");
+            }
         };
 
         device.powerOn();
