@@ -71,7 +71,7 @@ public class SmartRunner {
                 System.out.println("App " + appName + " installed");
             }
             public void uninstallApp(String appName) {
-                System.out.println("App " + appName + " removed");
+                System.out.println("App " + appName + " uninstalled");
             }
         };
 
