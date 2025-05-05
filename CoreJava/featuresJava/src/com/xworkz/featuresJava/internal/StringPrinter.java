@@ -4,3 +4,4 @@ package com.xworkz.featuresJava.internal;
 public interface StringPrinter {
     void longerThan(String str);
 }
+
