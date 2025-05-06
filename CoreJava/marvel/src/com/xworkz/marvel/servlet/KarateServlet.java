@@ -1,4 +1,6 @@
 package com.xworkz.marvel.servlet;
 
-public class KarateServlet {
+import javax.servlet.GenericServlet;
+
+public class KarateServlet extends GenericServlet {
 }

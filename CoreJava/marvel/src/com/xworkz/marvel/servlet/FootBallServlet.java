@@ -1,4 +1,6 @@
 package com.xworkz.marvel.servlet;
 
-public class FootBallServlet {
+import javax.servlet.GenericServlet;
+
+public class FootBallServlet extends GenericServlet {
 }

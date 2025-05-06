@@ -1,4 +1,6 @@
 package com.xworkz.marvel.servlet;
 
-public class KabaddiServlet {
+import javax.servlet.GenericServlet;
+
+public class KabaddiServlet extends GenericServlet {
 }

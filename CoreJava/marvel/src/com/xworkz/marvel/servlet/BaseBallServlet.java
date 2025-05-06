@@ -1,4 +1,6 @@
 package com.xworkz.marvel.servlet;
 
-public class BaseBallServlet {
+import javax.servlet.GenericServlet;
+
+public class BaseBallServlet extends GenericServlet {
 }
