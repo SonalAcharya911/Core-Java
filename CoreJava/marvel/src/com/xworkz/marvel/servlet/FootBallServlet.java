@@ -10,6 +10,10 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/football",loadOnStartup = 1)
 public class FootBallServlet extends GenericServlet {
 
+    public FootBallServlet(){
+        System.out.println("Badminton Servlet created by tomcat");
+    }
+
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         System.out.println("running service in ActionServlet");
