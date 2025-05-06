@@ -11,7 +11,7 @@ import java.io.IOException;
 public class TennisServlet extends GenericServlet {
 
     public TennisServlet(){
-        System.out.println("Badminton Servlet created by tomcat");
+        System.out.println("TennisServlet created by tomcat");
     }
 
     @Override
