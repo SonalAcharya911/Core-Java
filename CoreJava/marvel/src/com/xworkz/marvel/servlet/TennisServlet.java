@@ -1,4 +1,4 @@
 package com.xworkz.marvel.servlet;
 
-public class FooBallServlet {
+public class TennisServlet {
 }
