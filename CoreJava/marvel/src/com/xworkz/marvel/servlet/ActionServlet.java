@@ -7,7 +7,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/action",loadOnStartup = 1)
+@WebServlet(urlPatterns = "/action",loadOnStartup = 2)
 public class ActionServlet extends GenericServlet {
 
     public ActionServlet(){
