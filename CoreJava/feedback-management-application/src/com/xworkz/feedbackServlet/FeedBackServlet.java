@@ -28,5 +28,6 @@ public class FeedBackServlet extends GenericServlet {
         PrintWriter writer= servletResponse.getWriter();
 
         writer.println("Thanks for submitting the form");
+        System.out.println("this might be printed on the console");
     }
 }
