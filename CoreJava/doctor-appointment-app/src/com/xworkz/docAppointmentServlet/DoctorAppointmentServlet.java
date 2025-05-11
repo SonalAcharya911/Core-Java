@@ -15,6 +15,6 @@ public class DoctorAppointmentServlet extends GenericServlet {
     }
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("running service in DoctorAppointmentServlet");
+    System.out.println("running service in DoctorAppointmentServlet");
     }
 }
