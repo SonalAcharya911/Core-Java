@@ -58,8 +58,8 @@ public class DoctorAppointmentServlet extends GenericServlet {
         PrintWriter writer= servletResponse.getWriter();
 
         writer.println("<h1>Appointment details collected successfully</h1>");
-        writer.println("firstname: "+firstName);
-        writer.println("lastName: "+lastName);
+        writer.println("firstname: "+firstName+"<br>");
+        writer.println("lastName: "+lastName+"<br>");
         writer.println("email: "+email);
         writer.println("Phone number: "+phNum);
         writer.println("Age: "+age);

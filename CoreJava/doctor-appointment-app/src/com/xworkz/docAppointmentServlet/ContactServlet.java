@@ -14,13 +14,17 @@ public class ContactServlet extends GenericServlet {
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         String fname = servletRequest.getParameter("firstname");
         String lname = servletRequest.getParameter("lastname");
-        String mail = servletRequest.getParameter("email");
+        String email = servletRequest.getParameter("email");
         String message = servletRequest.getParameter("sickness");
 
         servletResponse.setContentType("text/html");
         PrintWriter writer = servletResponse.getWriter();
 
         writer.println("<h1>Contact collected successfully</h1>");
+        writer.println("firstname: "+fname);
+        writer.println("lastName: "+lname);
+        writer.println("email: "+email);
+        writer.println("Reason: "+message);
 
 
     }
