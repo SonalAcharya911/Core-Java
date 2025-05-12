@@ -62,8 +62,8 @@ public class DoctorAppointmentServlet extends GenericServlet {
         writer.println("lastName: "+lastName+"<br>");
         writer.println("email: "+email+"<br>");
         writer.println("Phone number: "+phNum+"<br>");
-        writer.println("Age: "+age);
-        writer.println("Address: "+address);
+        writer.println("Age: "+age+"<br>");
+        writer.println("Address: "+address+"<br>");
         writer.println("Gender: "+gender);
         writer.println("Department: "+dept);
         writer.println("Preferred doctor"+prefDoc);
