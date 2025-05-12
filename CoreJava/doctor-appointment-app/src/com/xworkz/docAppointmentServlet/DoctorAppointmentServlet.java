@@ -6,6 +6,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/getAppointment")
 public class DoctorAppointmentServlet extends GenericServlet {
@@ -20,13 +21,13 @@ public class DoctorAppointmentServlet extends GenericServlet {
         String lastName=servletRequest.getParameter("lastname");
         String email=servletRequest.getParameter("email");
 
-        String phone=servletRequest.getParameter("phone");
+        String phone=servletRequest.getParameter("");
         long phNum=0;
         if (phone != null && phone!="") {
             phNum=Long.parseLong(phone);
         }
 
-        String patientAge=servletRequest.getParameter("phone");
+        String patientAge=servletRequest.getParameter("age");
         int age=0;
         if (patientAge != null && patientAge!="") {
             age= Integer.parseInt(patientAge);
@@ -53,7 +54,10 @@ public class DoctorAppointmentServlet extends GenericServlet {
         System.out.println(time);
         System.out.println(reason);
 
+        servletResponse.setContentType("text/html");
+        PrintWriter writer= servletResponse.getWriter();
 
+        writer.println("<h1>Appointment details collected successfully</h1>");
 
 
     }
