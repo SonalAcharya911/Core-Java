@@ -15,6 +15,46 @@ public class DoctorAppointmentServlet extends GenericServlet {
     }
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-    System.out.println("running service in DoctorAppointmentServlet");
+        System.out.println("running service in DoctorAppointmentServlet");
+        String firstName= servletRequest.getParameter("firstname");
+        String lastName=servletRequest.getParameter("lastname");
+        String email=servletRequest.getParameter("email");
+
+        String phone=servletRequest.getParameter("phone");
+        long phNum=0;
+        if (phone != null && phone!="") {
+            phNum=Long.parseLong(phone);
+        }
+
+        String patientAge=servletRequest.getParameter("phone");
+        int age=0;
+        if (patientAge != null && patientAge!="") {
+            age= Integer.parseInt(patientAge);
+        }
+
+        String address=servletRequest.getParameter("address");
+        String gender=servletRequest.getParameter("gender");
+        String dept=servletRequest.getParameter("department");
+        String prefDoc=servletRequest.getParameter("doctor");
+        String date=servletRequest.getParameter("date");
+        String time=servletRequest.getParameter("time");
+        String reason=servletRequest.getParameter("reason");
+
+        System.out.println(firstName);
+        System.out.println(lastName);
+        System.out.println(email);
+        System.out.println(phNum);
+        System.out.println(age);
+        System.out.println(address);
+        System.out.println(gender);
+        System.out.println(dept);
+        System.out.println(prefDoc);
+        System.out.println(date);
+        System.out.println(time);
+        System.out.println(reason);
+
+
+
+
     }
 }
