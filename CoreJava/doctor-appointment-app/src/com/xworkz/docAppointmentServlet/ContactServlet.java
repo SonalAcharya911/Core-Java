@@ -21,10 +21,10 @@ public class ContactServlet extends GenericServlet {
         PrintWriter writer = servletResponse.getWriter();
 
         writer.println("<h1>Contact collected successfully</h1>");
-        writer.println("firstname: "+fname);
-        writer.println("lastName: "+lname);
-        writer.println("email: "+email);
-        writer.println("Reason: "+message);
+        writer.println("firstname: "+fname+"<br>");
+        writer.println("lastName: "+lname+"<br>");
+        writer.println("email: "+email+"<br>");
+        writer.println("Reason: "+message+"<br>");
 
 
     }
