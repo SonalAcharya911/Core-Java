@@ -32,7 +32,7 @@
 
 
 <div style="width: 80vh; margin: 30px auto 60px auto; background-color: #fff0f5; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <form action="">
+    <form action="submit" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" placeholder="Enter product name" name="name">
