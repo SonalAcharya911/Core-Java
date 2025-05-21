@@ -12,7 +12,7 @@ public class ProductDto {
     private String color;
     private int weight;
     private String manfDate;
-    private int warranty;
+    private String warranty;
     private boolean returnPolicy;
 
     public String getName() {
@@ -43,7 +43,7 @@ public class ProductDto {
         return quantity;
     }
 
-    public int getWarranty() {
+    public String getWarranty() {
         return warranty;
     }
 
@@ -61,6 +61,10 @@ public class ProductDto {
 
     public String getManfDate() {
         return manfDate;
+    }
+
+    public boolean getReturnPolicy(){
+        return returnPolicy;
     }
 
     public void setType(String type) {
@@ -111,7 +115,7 @@ public class ProductDto {
         this.sellingPrice = sellingPrice;
     }
 
-    public void setWarranty(int warranty) {
+    public void setWarranty(String warranty) {
         this.warranty = warranty;
     }
 
