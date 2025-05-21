@@ -41,7 +41,7 @@ public class ProductServiceImpl implements ProductService{
                 System.out.println("cost price should be greater than 50 Rs");
                 return false;
             }
-            if(sellingPrice!=0 && sellingPrice>=50 && sellingPrice<=mrp){
+            if(sellingPrice!=0 && sellingPrice>=50){
                 System.out.println("valid selling price");
             }
             else{

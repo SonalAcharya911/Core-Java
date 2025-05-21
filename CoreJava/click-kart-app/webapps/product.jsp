@@ -14,10 +14,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
+                    <a class="nav-link " aria-current="page" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product.jsp">Product</a>
+                    <a class="nav-link active" href="product.jsp">Product</a>
                 </li>
             </ul>
         </div>
@@ -30,8 +30,9 @@
     <h1 style="padding-top:20px">Product Details Form</h1>
 </center>
 
-
+<h3 style="color: red">${message}</h3>
 <div style="width: 80vh; margin: 30px auto 60px auto; background-color: #fff0f5; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
     <form action="submit" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
