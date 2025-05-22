@@ -1,53 +1,19 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Donation Success</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Donation Details</title>
 </head>
-<body class="bg-light">
+<body>
 
-<div class="container mt-5">
-    <div class="card shadow">
-        <div class="card-body text-center">
-            <h2 class="text-success mb-4">${message}</h2>
+<form action="donate" method="post">
+    Name: <input type="text" name="name" id="name"><br><br>
+    Contact: <input type="text" name="contact" id="contact"><br><br>
+    Email: <input type="email" name="email" id="email"><br><br>
+    Amount: <input type="number" name="amount" id="amount"><br><br>
+    Description: <input type="text" name="desc" id="desc"><br><br>
 
-            <table class="table table-bordered table-striped table-hover">
-                <thead class="table-dark">
-                <tr>
-                    <th>Field</th>
-                    <th>Details</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Donor Name</td>
-                    <td>${donation.name}</td>
-                </tr>
-                <tr>
-                    <td>Contact Number</td>
-                    <td>${donation.contact}</td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>${donation.email}</td>
-                </tr>
-                <tr>
-                    <td>Donation Amount</td>
-                    <td>${donation.amount}</td>
-                </tr>
-                <tr>
-                    <td>Message</td>
-                    <td>${donation.description}</td>
-                </tr>
-                </tbody>
-            </table>
+</form>
 
-            <a href="index.jsp" class="btn btn-primary mt-3">Back to Home</a>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
