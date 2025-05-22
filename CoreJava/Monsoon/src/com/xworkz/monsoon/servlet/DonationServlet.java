@@ -9,6 +9,10 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/donate",loadOnStartup = 1)
 public class DonationServlet extends HttpServlet {
+
+    public DonationServlet(){
+        System.out.println("DonationServlet created....");
+    }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("running doPost in DonationServlet");
