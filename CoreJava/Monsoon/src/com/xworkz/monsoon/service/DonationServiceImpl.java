@@ -27,7 +27,27 @@ public class DonationServiceImpl implements DonationService{
                 System.out.println("contact is not valid");
                 return false;
             }
+            if(donationDto.getEmail()!=null && donationDto.getEmail().length()>=10){
+                System.out.println("valid email");
+            }else{
+                System.out.println("invalid email");
+                return false;
+            }
 
+            if(donationDto.getAmount()!=0 && donationDto.getAmount()>=500){
+                System.out.println("valid amount");
+            }
+            else {
+                System.out.println("invalid amount....should be above 500");
+                return false;
+            }
+            if(donationDto.getDescription().length()>=15){
+                System.out.println("description acceptable");
+            }
+            else{
+                System.out.println("invalid desc......length should be above 15");
+                return false;
+            }
         }
         else{
             System.out.println("donationDto is cannot be null");
