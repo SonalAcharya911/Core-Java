@@ -5,8 +5,9 @@
 </head>
 
 <body>
-    <form action="donate">
-        <input type="text" placeholder="enter name" >
+    <form action="donate" method="post">
+
+        <input type="text" placeholder="enter name" name="name">
     </form>
 
 </body>
