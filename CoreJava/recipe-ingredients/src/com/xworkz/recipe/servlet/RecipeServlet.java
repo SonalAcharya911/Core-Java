@@ -48,6 +48,7 @@ public class RecipeServlet extends HttpServlet {
             requestDispatcher.forward(req,resp);
         }
 
+        RecipeRepository recipeRepository=new RecipeRepositoryImpl();
 
 
 
