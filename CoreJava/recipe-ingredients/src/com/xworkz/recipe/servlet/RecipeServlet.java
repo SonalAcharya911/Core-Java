@@ -16,6 +16,10 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/getRecipe")
 public class RecipeServlet extends HttpServlet {
+
+    public RecipeServlet(){
+        System.out.println("no-arg const of RecipeServlet...");
+    }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name=req.getParameter("name");
