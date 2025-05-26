@@ -8,6 +8,10 @@ public class RecipeDto {
     private String ing4;
     private String ing5;
 
+    public RecipeDto(){
+        System.out.println("no-arg const of RecipeDto");
+    }
+
     public String getRecipeName() {
         return recipeName;
     }
