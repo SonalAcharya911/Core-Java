@@ -3,6 +3,10 @@ package com.xworkz.recipe.service;
 import com.xworkz.recipe.dto.RecipeDto;
 
 public class RecipeServiceImpl implements RecipeService{
+
+    public RecipeServiceImpl(){
+        System.out.println("no-arg const of RecipeServiceImpl");
+    }
     @Override
     public boolean save(RecipeDto recipeDto) {
         if(recipeDto!=null ){
