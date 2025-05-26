@@ -10,13 +10,14 @@ public class RecipeRepositoryImpl implements RecipeRepository{
     @Override
     public boolean persist(RecipeDto recipeDto) {
         if(recipeDto!=null){
+
             System.out.println("recipeDto is not null");
-        }else{
-            System.out.println("RecipeDto is null");
-            return false;
 
         }
+        else{
+            System.out.println("RecipeDto is null");
+            return false;
+        }
         return true;
-
     }
 }
