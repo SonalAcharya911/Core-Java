@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class FeedbackServlet extends HttpServlet {
+    public FeedbackServlet(){
+        System.out.println("FeedbackServlet created....");
+    }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
