@@ -5,10 +5,8 @@
 </head>
 
 <body>
-    <form action="donate" method="post">
 
-        <input type="text" placeholder="enter name" name="name">
-    </form>
+<a href="donation.jsp"> Donation Page</a><br><br>
 
 </body>
 
