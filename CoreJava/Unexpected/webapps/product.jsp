@@ -13,7 +13,7 @@
         Product Name: <input type="text" name="productName"> <br><br>
         Price: <input type="number" name="price"><br><br>
         Quantity: <input type="number" name="quantity"><br><br>
-        Category: <select>
+        Category: <select name="category">
         <option value="Electronics"></option>
         <option value="Books"> </option>
         <option value="Clothing"></option>
