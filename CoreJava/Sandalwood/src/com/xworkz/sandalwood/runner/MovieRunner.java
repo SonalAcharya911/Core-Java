@@ -1,17 +1,20 @@
 package com.xworkz.sandalwood.runner;
 
 import com.xworkz.sandalwood.dto.MovieDto;
+import com.xworkz.sandalwood.exceptions.*;
+import javafx.fxml.LoadException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.FileAlreadyExistsException;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.text.ParseException;
 
 public class MovieRunner {
-    public static void main(String[] args) throws IOException, ParseException, SQLException, ClassNotFoundException, InterruptedException, NoSuchMethodException {
+    public static void main(String[] args) throws IOException, ParseException, SQLException, ClassNotFoundException, InterruptedException, NoSuchMethodException, BookingLimitExceededException, EmployeeNotFoundException, InvalidAgeException, LoginFailedException, PaymentFailedException, SeatAlreadyBooked, TicketExpiredException, NoSeatsAvailableException {
         MovieDto movieDto=new MovieDto();
 
         movieDto.toString();
@@ -28,10 +31,41 @@ public class MovieRunner {
         getMethodDetails();
 
         int seatNo=19;
-        String employeeName="Shashi";
+        int numOfTickets=3;
+        boolean employeeAbsent=true;
         int age=20;
         boolean loginSuccess=true;
         boolean seatsAvailable=true;
+        boolean paid=true;
+        isSeatAvailable(seatNo);
+        int ticketNum=101;
+        Date date=null;
+
+        if(numOfTickets>3){
+            throw new BookingLimitExceededException("booking limit exceeded");
+        }
+        if(employeeAbsent){
+            throw new EmployeeNotFoundException("employee not found");
+        }
+        if(age>90){
+            throw new InvalidAgeException("invalid age");
+
+        }
+        if(!loginSuccess){
+            throw new LoginFailedException("login failed");
+        }
+        if(!paid){
+            throw new PaymentFailedException("payment failed");
+        }
+        if(!isSeatAvailable(seatNo)){
+            throw new SeatAlreadyBooked("seat already booked");
+        }
+        if(!isTicketValid(ticketNum,date)){
+            throw new TicketExpiredException("ticket expired");
+        }
+        if(!seatsAvailable){
+            throw new NoSeatsAvailableException("no seats available");
+        }
 
 
     }
@@ -74,4 +108,22 @@ public class MovieRunner {
         throw new NoSuchMethodException();
     }
 
+    public static boolean isSeatAvailable(int seatNo){
+        if(seatNo==1 || seatNo==10 || seatNo == 15){
+            return false;
+        }
+        else{
+            return true;
+        }
+
+
+    }
+    public static boolean isTicketValid(int ticketNum, Date date){
+        if(date.after(date)){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
 }
