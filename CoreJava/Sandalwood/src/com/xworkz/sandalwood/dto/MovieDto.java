@@ -7,6 +7,7 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class MovieDto {
     private String movieName;
     private String releaseDate;
@@ -14,4 +15,5 @@ public class MovieDto {
     private int boxOffice;
     private String leadActor;
     private String genre;
+
 }
