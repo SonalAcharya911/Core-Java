@@ -1,4 +1,7 @@
 package exceptions;
 
-public class NullProductNameException {
+public class NullProductNameException extends RuntimeException{
+    public NullProductNameException(String message){
+        super(message);
+    }
 }
