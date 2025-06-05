@@ -1,4 +1,7 @@
 package exceptions;
 
-public class WrongCategoryException {
+public class WrongCategoryException extends RuntimeException{
+    public WrongCategoryException(String message){
+        super(message);
+    }
 }
