@@ -1,5 +1,7 @@
 package service;
 
+import dto.ProductDto;
+
 public interface ProductService {
-    boolean save();
+    boolean save(ProductDto productDto);
 }

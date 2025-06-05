@@ -1,4 +1,7 @@
 package exceptions;
 
-public class ProductNameLengthException {
+public class ProductNameLengthException extends RuntimeException{
+    public ProductNameLengthException(String message){
+        super(message);
+    }
 }
