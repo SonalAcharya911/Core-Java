@@ -1,4 +1,7 @@
 package exceptions;
 
-public class ProductIDNotPositiveException {
+public class ProductIDNotPositiveException extends RuntimeException{
+    public ProductIDNotPositiveException(String message){
+        super(message);
+    }
 }
