@@ -12,6 +12,7 @@ public class RestaurantServiceImpl implements RestaurantService{
             try{
                 //name
                 if(restaurantDto.getRestaurantName()==null){
+                    System.out.println("");
                     throw new NullPointerException("restaurant name is null");
                 }
                 else if(restaurantDto.getRestaurantName().length()<3){
@@ -66,6 +67,7 @@ public class RestaurantServiceImpl implements RestaurantService{
                 if(restaurantDto.getFoodMenu()==null){
                     throw new NullPointerException("food menu is null");
                 } else if (checkElement(restaurantDto.getFoodMenu(), restaurantDto.getFoodMenu().length)){
+
                     throw new ArrayIndexOutOfBoundsException("index is more than array length");
                 }
                 else {
@@ -100,9 +102,11 @@ public class RestaurantServiceImpl implements RestaurantService{
 
             }
             catch(Exception e){
-                System.out.println("validation failed "+ e.getMessage());
-                return false;
+                throw new NullPointerException("njhw");
+//                System.out.println("validation failed "+ e.getMessage());
+
             }
+
         }
         else{
             throw new NullPointerException("restaurantDto is null");
@@ -111,9 +115,13 @@ public class RestaurantServiceImpl implements RestaurantService{
     }
 
     public boolean checkElement(String[] arr,int index){
+
         if(arr.length<=index){
             return false;
         }
         else return true;
+
     }
+
+
 }
