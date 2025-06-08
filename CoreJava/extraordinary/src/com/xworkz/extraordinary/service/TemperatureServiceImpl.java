@@ -7,8 +7,7 @@ public class TemperatureServiceImpl implements TemperatureService{
     public boolean validate(TemperatureDto temperatureDto) {
         try{
             if(temperatureDto!=null){
-                double temp=Double.parseDouble(temperatureDto.)
-
+                System.out.println("valid dto");
             }
             else{
                 throw new NullPointerException("dto is null")
