@@ -10,7 +10,7 @@ public class TemperatureServiceImpl implements TemperatureService{
                 System.out.println("valid dto");
             }
             else{
-                throw new NullPointerException("dto is null")
+                throw new NullPointerException("dto is null");
             }
         }
         catch(Exception e){
