@@ -14,9 +14,12 @@ public class TemperatureRunner {
             TemperatureService service = new TemperatureServiceImpl();
 
             System.out.print("Enter temperature value: ");
-            String input = scanner.nextLine();
+            String temp = scanner.nextLine();
 
             service.validate(temperatureDto);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }
