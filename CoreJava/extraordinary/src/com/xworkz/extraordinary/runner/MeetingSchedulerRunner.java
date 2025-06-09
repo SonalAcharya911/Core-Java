@@ -6,7 +6,7 @@ public class MeetingSchedulerRunner {
     public static void main(String[] args) {
         Meeting[] meetings = new Meeting[1];
         meetings[0] = new Meeting(LocalDateTime.of(2025, 6, 10, 9, 0), 60);
-
+        System.out.println(meetings[0].durationMinutes);
         Meeting newMeeting = new Meeting(LocalDateTime.of(2025, 6, 10, 9, 30), 30);
 
         try {
