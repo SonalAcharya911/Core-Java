@@ -37,4 +37,5 @@ public class MeetingSchedulerRunner {
             return !this.start.isAfter(otherEnd) && !other.start.isAfter(thisEnd);
         }
     }
+
 }
