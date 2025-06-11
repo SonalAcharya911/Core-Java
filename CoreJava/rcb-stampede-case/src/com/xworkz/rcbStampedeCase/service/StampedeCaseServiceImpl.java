@@ -20,16 +20,16 @@ public class StampedeCaseServiceImpl implements StampedeCaseService{
                 System.out.println("valid location");
             }
             else{
-                return "loaction is null";
+                return "location is null";
             }
 
-            if(stampedeCaseDto.getDeaths()<0){
+            if(stampedeCaseDto.getDeaths()>0){
                 System.out.println("valid number");
             }
             else{
                 return "number of deaths cannot be less than zero";
             }
-            if(stampedeCaseDto.getInjuries()<0){
+            if(stampedeCaseDto.getInjuries()>0){
                 System.out.println("valid number");
             }
             else{
