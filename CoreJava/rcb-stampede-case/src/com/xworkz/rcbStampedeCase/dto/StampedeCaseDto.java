@@ -15,10 +15,10 @@ public class StampedeCaseDto {
     private String location;
 
     public StampedeCaseDto(String event,String location,int deaths,int injuries){
-        event=this.event;
-        location=this.location;
-        deaths=this.deaths;
-        injuries=this.injuries;
+        this.event=event;
+        this.location=location;
+        this.deaths=deaths;
+        this.injuries=injuries;
     }
 
 }
