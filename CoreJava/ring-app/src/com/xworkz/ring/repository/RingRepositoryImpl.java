@@ -26,11 +26,15 @@ public class RingRepositoryImpl implements RingRepository{
                 Statement statement=connection.createStatement();
                 statement.executeUpdate(sql);
 
+
             }
             catch(SQLException e){
                 System.out.println(e.getMessage());
                 return false;
             }
+
+            System.out.println("saving success in repo");
+
             return true;
         }
         return false;
