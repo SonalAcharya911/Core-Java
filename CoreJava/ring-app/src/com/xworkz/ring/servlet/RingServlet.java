@@ -39,6 +39,7 @@ public class RingServlet extends HttpServlet {
         }
         else{
             RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
+            requestDispatcher.forward(req,resp);
 
         }
     }
