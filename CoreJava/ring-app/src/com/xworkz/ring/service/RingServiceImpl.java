@@ -50,6 +50,7 @@ public class RingServiceImpl implements RingService{
                 System.out.println("not saved in repo...");
                 return false;
             }
+            System.out.println("service finished...");
             return true;
         }
         return false;
