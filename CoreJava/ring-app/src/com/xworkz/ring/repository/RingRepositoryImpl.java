@@ -24,8 +24,8 @@ public class RingRepositoryImpl implements RingRepository{
                 String sql="INSERT INTO ring_data(material,weight,size,price,purchase_date,have_stones,custom_made) VALUES ('"+ ringDto.getMaterial()
                         +"',"+ ringDto.getWeight()+","+ ringDto.getSize()+","+ ringDto.getPrice()+",'"+ ringDto.getPurchaseDate()+"',"+ringDto.isHaveStones()+","+ringDto.isCustomMade()+");";
                 Statement statement=connection.createStatement();
-                statement.executeUpdate(sql);
-
+                int row=statement.executeUpdate(sql);
+                System.out.println("statement executed........rows affected: "+row);
 
             }
             catch(SQLException e){
