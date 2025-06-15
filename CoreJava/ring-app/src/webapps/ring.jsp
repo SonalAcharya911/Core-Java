@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:style="http://www.w3.org/1999/xhtml">
 <head>
     <title>Ring Details Form</title>
 
@@ -31,9 +31,10 @@
     <form action="ring" method="post"
           style="background-color: #fff3e0; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); min-width: 320px;">
         <h3 style="text-align: center; color: #8d6e63;">Fill Ring Details
-            <br><br><center>${message}</center>
-            <br><br>
         </h3>
+        <br><br><center><h6 style="color:green">${success}</h6>
+        <h6 style="color:red">${failure}</h6></center>
+        <br><br>
 
 
         <div style="margin-bottom: 15px;">
@@ -66,7 +67,7 @@
         </div>
         <div style="margin-bottom: 20px;">
             <label style="display: flex; align-items: center;">
-                <input type="checkbox" name="customMade" style="margin-right: 10px;">
+                <input type="checkbox" name="customMade" style="margin-right: 10px;" value="true">
                 Custom Made
             </label>
         </div>
