@@ -5,7 +5,4 @@ import com.xworkz.ring.repository.RingRepository;
 
 public interface RingService {
     boolean save(RingDto ringDto);
-    default void service(){
-        System.out.println("running service in RingService");
-    }
 }
