@@ -23,7 +23,10 @@
         </div>
     </div>
 </nav>
-<h1>Saved Successfully</h1>
+<br><br><br><br>
+<center>
+    <h1 style="text-align: center; color: #8d6e63;">Saved Successfully</h1>
+</center>
 
 <a href="ring.jsp"> Fill another form</a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
