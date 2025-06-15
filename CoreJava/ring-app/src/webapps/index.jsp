@@ -25,7 +25,7 @@
     </div>
 </nav>
 <br><br><br><br>
-<center><h1>WELCOME TO OUR BRAND NEW ROYAL JEWELLERS. </h1></center>
+<center><h1> WELCOME TO OUR ROYAL JEWELLERS. </h1></center>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </h1>
 </body>
