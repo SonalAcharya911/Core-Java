@@ -33,14 +33,13 @@ public class RingServlet extends HttpServlet {
         boolean valid=ringService.save(ringDto);
 
         if(valid){
-            RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
-            req.setAttribute("message","saved successfully");
-            requestDispatcher.forward(req,resp);
+            req.setAttribute("success","saved successfully");
         }
         else{
-            RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
-            requestDispatcher.forward(req,resp);
-
+            req.setAttribute("failure","saved successfully");
         }
+        RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
+        requestDispatcher.forward(req,resp);
+
     }
 }
