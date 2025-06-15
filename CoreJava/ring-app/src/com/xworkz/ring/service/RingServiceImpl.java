@@ -33,7 +33,7 @@ public class RingServiceImpl implements RingService{
                 return false;
             }
 
-            if(ringDto.getPrice()!=0){
+            if(ringDto.getPrice()!=0 && ringDto.getPrice()>1000){
                 System.out.println("valid price");
             }
             else{
