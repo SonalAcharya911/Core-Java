@@ -14,9 +14,9 @@ import java.time.LocalDate;
 
 public class RingDto {
     private String material;
-    private long weight;
+    private double weight;
     private int size;
-    private long price;
+    private double price;
     private LocalDate purchaseDate;
     private boolean haveStones;
     private boolean customMade;

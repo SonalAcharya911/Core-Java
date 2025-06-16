@@ -4,6 +4,8 @@ import com.xworkz.ring.dto.RingDto;
 import com.xworkz.ring.repository.RingRepository;
 import com.xworkz.ring.repository.RingRepositoryImpl;
 
+import java.time.LocalDate;
+
 public class RingServiceImpl implements RingService{
     @Override
     public boolean save(RingDto ringDto) {
@@ -39,6 +41,14 @@ public class RingServiceImpl implements RingService{
             else{
                 System.out.println("invalid price");
                 return false;
+            }
+
+            if(ringDto.getPurchaseDate().isAfter(LocalDate.now())){
+                System.out.println("invalid date");
+                return false;
+            }
+            else{
+                System.out.println("valid date");
             }
 
             RingRepository repository=new RingRepositoryImpl();
