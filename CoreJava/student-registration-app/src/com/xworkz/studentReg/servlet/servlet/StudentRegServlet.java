@@ -1,4 +1,4 @@
-package com.xworkz.servlet;
+package com.xworkz.studentReg.servlet.servlet;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
