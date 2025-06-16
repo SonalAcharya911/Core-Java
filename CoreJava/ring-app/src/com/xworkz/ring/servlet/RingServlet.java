@@ -27,7 +27,7 @@ public class RingServlet extends HttpServlet {
         String customMade=req.getParameter("customMade");
 
         System.out.println("haveStones: "+haveStones+".....customMade: "+customMade);
-        RingDto ringDto=new RingDto(material,Long.parseLong(weight),Integer.parseInt(size),Long.parseLong(price), LocalDate.parse(purchaseDate),Boolean.parseBoolean(haveStones),Boolean.parseBoolean(customMade));
+        RingDto ringDto=new RingDto(material,Double.parseDouble(weight),Integer.parseInt(size),Double.parseDouble(price), LocalDate.parse(purchaseDate),Boolean.parseBoolean(haveStones),Boolean.parseBoolean(customMade));
 
         RingService ringService=new RingServiceImpl();
         boolean valid=ringService.save(ringDto);
@@ -36,7 +36,8 @@ public class RingServlet extends HttpServlet {
             req.setAttribute("success","saved successfully");
         }
         else{
-            req.setAttribute("failure","saved successfully");
+            req.setAttribute("failure","details not saved...check the input values");
+            req.setAttribute("dto",ringDto);
         }
         RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
         requestDispatcher.forward(req,resp);
