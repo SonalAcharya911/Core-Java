@@ -76,6 +76,7 @@ public class RingServiceImpl implements RingService{
             RingRepository dusterRepo=new RingRepositoryImpl();
             return dusterRepo.findById(id);
         }
+        System.out.println("");
         return RingService.super.findById(id);
     }
 }
