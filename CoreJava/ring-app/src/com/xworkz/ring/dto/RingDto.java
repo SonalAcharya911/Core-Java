@@ -20,5 +20,6 @@ public class RingDto {
     private LocalDate purchaseDate;
     private boolean haveStones;
     private boolean customMade;
+    private int id;
 
 }
