@@ -20,6 +20,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white active" href="ring.jsp">Ring Form</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="RingViewer.jsp">Ring Viewer</a>
+                </li>
             </ul>
         </div>
     </div>
