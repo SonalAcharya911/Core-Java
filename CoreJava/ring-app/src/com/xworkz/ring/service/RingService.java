@@ -9,6 +9,7 @@ public interface RingService {
     boolean save(RingDto ringDto);
     default Optional<RingDto> findById(int id)
     {
+        System.out.println("");
         return  Optional.empty();
     }
 }
