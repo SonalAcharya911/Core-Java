@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Optional;
 
 public class RingRepositoryImpl implements RingRepository{
     @SneakyThrows
@@ -38,5 +39,11 @@ public class RingRepositoryImpl implements RingRepository{
             return true;
         }
         return false;
+    }
+
+    @Override
+    public Optional<RingDto> findById(int id) {
+        System.out.println("running findById in dusterRepositoryImpl...");
+        return RingRepository.super.findById(id);
     }
 }

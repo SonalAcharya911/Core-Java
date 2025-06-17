@@ -5,6 +5,7 @@ import com.xworkz.ring.repository.RingRepository;
 import com.xworkz.ring.repository.RingRepositoryImpl;
 
 import java.time.LocalDate;
+import java.util.Optional;
 
 public class RingServiceImpl implements RingService{
     @Override
@@ -64,5 +65,17 @@ public class RingServiceImpl implements RingService{
             return true;
         }
         return false;
+    }
+
+    @Override
+    public Optional<RingDto> findById(int id) {
+        System.out.println("running findById in dusterServiceImpl...");
+        if(id>0)
+        {
+            System.out.println("id is valid :"+id);// call the repo
+            RingRepository dusterRepo=new RingRepositoryImpl();
+            return dusterRepo.findById(id);
+        }
+        return RingService.super.findById(id);
     }
 }

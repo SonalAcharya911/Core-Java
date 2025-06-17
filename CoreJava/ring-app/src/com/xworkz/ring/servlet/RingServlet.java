@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
 
-@WebServlet(urlPatterns = "/ring")
+@WebServlet(urlPatterns = {"/ring","/search"})
 public class RingServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,5 +42,15 @@ public class RingServlet extends HttpServlet {
         RequestDispatcher requestDispatcher=req.getRequestDispatcher("ring.jsp");
         requestDispatcher.forward(req,resp);
 
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("running doGet in RingServlet");
+        String ringId=req.getParameter("ringId");
+        if(ringId!=null){
+            int id=Integer.parseInt(ringId);
+            System.out.println("ringId: "+id);
+        }
     }
 }
