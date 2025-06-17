@@ -9,6 +9,7 @@ public class SampleRunner {
     public static boolean valid(String str){
 
         if(str.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z]+\\.[a-z]{2,}")) {
+            System.out.println("");
             return true;
         }
         return false;
