@@ -1,17 +1,17 @@
 package com.xworkz.ring.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.xworkz.ring.constant.RingConstant;
+import lombok.*;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@ToString
 public class RingDto {
     private String material;
     private double weight;
@@ -20,6 +20,6 @@ public class RingDto {
     private LocalDate purchaseDate;
     private boolean haveStones;
     private boolean customMade;
-    private int id;
-
+    private String createdBy= RingConstant.SYSTEM.toString();
+    private Timestamp createdTime;
 }
