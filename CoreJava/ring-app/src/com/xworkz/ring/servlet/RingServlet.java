@@ -1,5 +1,6 @@
 package com.xworkz.ring.servlet;
 
+import com.xworkz.ring.constant.RingConstant;
 import com.xworkz.ring.dto.RingDto;
 import com.xworkz.ring.service.RingService;
 import com.xworkz.ring.service.RingServiceImpl;
@@ -11,7 +12,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Optional;
 
 @WebServlet(urlPatterns = {"/ring","/search"})
 public class RingServlet extends HttpServlet {
@@ -26,8 +31,9 @@ public class RingServlet extends HttpServlet {
         String haveStones=req.getParameter("haveStones");
         String customMade=req.getParameter("customMade");
 
+
         System.out.println("haveStones: "+haveStones+".....customMade: "+customMade);
-        RingDto ringDto=new RingDto(material,Double.parseDouble(weight),Integer.parseInt(size),Double.parseDouble(price), LocalDate.parse(purchaseDate),Boolean.parseBoolean(haveStones),Boolean.parseBoolean(customMade));
+        RingDto ringDto=new RingDto(material,Double.parseDouble(weight),Integer.parseInt(size),Double.parseDouble(price), LocalDate.parse(purchaseDate),Boolean.parseBoolean(haveStones),Boolean.parseBoolean(customMade), RingConstant.SYSTEM.toString() , Timestamp.valueOf(LocalDateTime.now()));
 
         RingService ringService=new RingServiceImpl();
         boolean valid=ringService.save(ringDto);
@@ -51,6 +57,15 @@ public class RingServlet extends HttpServlet {
         if(ringId!=null){
             int id=Integer.parseInt(ringId);
             System.out.println("ringId: "+id);
+            RingService ringService=new RingServiceImpl();
+            Optional<RingDto> optionalRingDto=ringService.findById(id);
+            if(optionalRingDto.isPresent()){
+                RingDto ringDto=optionalRingDto.get();
+                System.out.println("ring data is found: "+ringDto);
+            }
+            else{
+                System.out.println("ring data is not found for id : "+id);
+            }
         }
     }
 }
