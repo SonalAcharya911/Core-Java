@@ -2,16 +2,21 @@ package com.xworkz.studentReg.dto;
 
 public class StudentDto {
     private String studentName;
-    private int rollNumber;
     private String email;
+    private String course;
 
     public String getEmail() {
         return email;
     }
 
-    public int getRollNumber() {
-        return rollNumber;
+    public String getCourse() {
+        return course;
     }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
 
     public String getStudentName() {
         return studentName;
@@ -21,9 +26,7 @@ public class StudentDto {
         this.email = email;
     }
 
-    public void setRollNumber(int rollNumber) {
-        this.rollNumber = rollNumber;
-    }
+
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
@@ -31,6 +34,6 @@ public class StudentDto {
 
     @Override
     public String toString() {
-        return "studentName: " + studentName + "rollNumber: " + rollNumber + "email: " + email;
+        return "studentName: " + studentName + "course: " + course + "email: " + email;
     }
 }
