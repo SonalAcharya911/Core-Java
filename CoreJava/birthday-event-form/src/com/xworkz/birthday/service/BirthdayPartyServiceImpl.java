@@ -84,10 +84,10 @@ public class BirthdayPartyServiceImpl implements BirthdayPartyService{
     }
 
     @Override
-    public BirthdayPartyDto[] findAll() {
+    public Optional<BirthdayPartyDto[]> findAll() {
         System.out.println("running findAll in Birthday Service Impl");
         BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
         birthdayPartyRepository.findAll();
-        return Optional.of()
+        return Optional.empty();
     }
 }
