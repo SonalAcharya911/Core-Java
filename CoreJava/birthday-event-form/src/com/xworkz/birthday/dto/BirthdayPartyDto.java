@@ -22,5 +22,4 @@ public class BirthdayPartyDto {
     private String specialRequests;
     private LocalDate createdDate;
     private LocalTime createdTime;
-    private int id;
 }

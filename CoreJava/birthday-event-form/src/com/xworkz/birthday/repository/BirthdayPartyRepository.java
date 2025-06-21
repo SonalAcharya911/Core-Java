@@ -8,7 +8,6 @@ public interface BirthdayPartyRepository {
     boolean persist(BirthdayPartyDto birthdayPartyDto);
 
     default Optional<BirthdayPartyDto[]> findAll(){
-        System.out.println("");
         return Optional.empty();
     }
 
