@@ -59,5 +59,12 @@ public class BirthdayPartyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("running doGet in BirthdayPartyServlet");
 
+        BirthdayPartyService birthdayPartyService=new BirthdayPartyServiceImpl();
+        birthdayPartyService.findAll();
+
+        if(birthdayPartyService.findAll().isPresent()){
+
+        }
+
     }
 }

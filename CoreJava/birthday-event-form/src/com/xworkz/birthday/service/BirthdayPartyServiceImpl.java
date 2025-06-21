@@ -3,6 +3,7 @@ package com.xworkz.birthday.service;
 import com.xworkz.birthday.dto.BirthdayPartyDto;
 import com.xworkz.birthday.repository.BirthdayPartyRepository;
 import com.xworkz.birthday.repository.BirthdayPartyRepositoryImpl;
+import jdk.nashorn.internal.runtime.options.Option;
 
 import java.util.Optional;
 
@@ -87,7 +88,7 @@ public class BirthdayPartyServiceImpl implements BirthdayPartyService{
     public Optional<BirthdayPartyDto[]> findAll() {
         System.out.println("running findAll in Birthday Service Impl");
         BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
-        birthdayPartyRepository.findAll();
-        return Optional.empty();
+        Optional<BirthdayPartyDto[]> birthdayPartyDtos=birthdayPartyRepository.findAll();
+        return birthdayPartyDtos;
     }
 }
