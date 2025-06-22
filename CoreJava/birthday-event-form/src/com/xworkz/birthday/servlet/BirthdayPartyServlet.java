@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Optional;
 
 @WebServlet(urlPatterns = "/saveGuest")
 public class BirthdayPartyServlet extends HttpServlet {
@@ -70,8 +71,10 @@ public class BirthdayPartyServlet extends HttpServlet {
         int id=0;
         if(guestId!=null) id=Integer.parseInt(guestId);
 
-
-        birthdayPartyService.findById(id);
+        if(birthdayPartyService.findById(id).isPresent()){
+            Optional<BirthdayPartyDto> optionalBirthdayPartyDto=birthdayPartyService.findById(id);
+            req.setAttribute("returningID",optionalBirthdayPartyDto);
+        }
 
     }
 }
