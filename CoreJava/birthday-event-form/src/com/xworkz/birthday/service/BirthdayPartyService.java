@@ -7,5 +7,7 @@ import java.util.Optional;
 public interface BirthdayPartyService {
     boolean validate(BirthdayPartyDto birthdayPartyDto);
 
-    Optional<BirthdayPartyDto[]> findAll();
+    default Optional<BirthdayPartyDto[]> findAll(){
+        return Optional.empty();
+    }
 }
