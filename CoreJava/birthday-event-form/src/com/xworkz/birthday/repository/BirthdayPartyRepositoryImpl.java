@@ -98,17 +98,17 @@ public class BirthdayPartyRepositoryImpl implements BirthdayPartyRepository{
 
 
             }
-            return Optional.of(birthdayPartyDtos);
+            return java.util.Optional.of(birthdayPartyDtos);
 
         }catch (SQLException e){
             e.printStackTrace();
         }
 
-        return Optional.empty();
+        return java.util.Optional.empty();
     }
 
     @Override
-    public BirthdayPartyDto findByID(int id) {
+    public Optional<BirthdayPartyDto> findByID(int id) {
         BirthdayPartyDto birthdayPartyDto=new BirthdayPartyDto();
         String findByIdQuery="SELECT * FROM birthday_guest_details b where b.id=?";
         try{
@@ -129,7 +129,7 @@ public class BirthdayPartyRepositoryImpl implements BirthdayPartyRepository{
             e.printStackTrace();
         }
         System.out.println("");
-        return birthdayPartyDto;
+        return java.util.Optional.of(birthdayPartyDto);
 
     }
 }

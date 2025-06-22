@@ -8,8 +8,11 @@ public interface BirthdayPartyRepository {
     boolean persist(BirthdayPartyDto birthdayPartyDto);
 
     default Optional<BirthdayPartyDto[]> findAll(){
-        return Optional.empty();
+        return java.util.Optional.empty();
     }
 
-    BirthdayPartyDto findByID(int id);
+    default Optional<BirthdayPartyDto> findByID(int id) {
+        return java.util.Optional.empty();
+    }
+
 }
