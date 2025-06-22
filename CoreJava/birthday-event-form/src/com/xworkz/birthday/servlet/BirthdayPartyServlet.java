@@ -66,5 +66,12 @@ public class BirthdayPartyServlet extends HttpServlet {
 
         }
 
+        String guestId=req.getParameter("guestId");
+        int id=0;
+        if(guestId!=null) id=Integer.parseInt(guestId);
+
+
+        birthdayPartyService.findById(id);
+
     }
 }
