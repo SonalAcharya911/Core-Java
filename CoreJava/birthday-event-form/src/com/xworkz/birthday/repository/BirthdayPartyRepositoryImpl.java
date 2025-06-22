@@ -120,6 +120,16 @@ public class BirthdayPartyRepositoryImpl implements BirthdayPartyRepository{
 
                 ResultSet resultSet=preparedStatement.executeQuery();
                 birthdayPartyDto.setGuestId(resultSet.getInt(1));
+                birthdayPartyDto.setGuestName(resultSet.getString(2));
+                birthdayPartyDto.setContactNumber(resultSet.getLong(3));
+                birthdayPartyDto.setEmail(resultSet.getString(4));
+                birthdayPartyDto.setRsvpStatus(resultSet.getString(5));
+                birthdayPartyDto.setNumberOfAttendees(resultSet.getInt(6));
+                birthdayPartyDto.setFoodPreference(resultSet.getString(7));
+                birthdayPartyDto.setSpecialRequests(resultSet.getString(8));
+                birthdayPartyDto.setCreatedDate(resultSet.getDate(9).toLocalDate());
+                birthdayPartyDto.setCreatedTime(resultSet.getTime(10).toLocalTime());
+
             }
             catch(SQLException e){
                 e.printStackTrace();

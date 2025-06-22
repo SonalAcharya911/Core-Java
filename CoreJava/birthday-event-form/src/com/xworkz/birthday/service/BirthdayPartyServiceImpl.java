@@ -89,6 +89,12 @@ public class BirthdayPartyServiceImpl implements BirthdayPartyService{
         System.out.println("running findAll in Birthday Service Impl");
         BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
         Optional<BirthdayPartyDto[]> birthdayPartyDtos=birthdayPartyRepository.findAll();
-        return birthdayPartyDtos;
+        if(birthdayPartyDtos.isPresent()){
+            return birthdayPartyDtos;
+        }
+        else{
+            System.out.println("null recieved by findAll in service");
+        }
+        return Optional.empty();
     }
 }
