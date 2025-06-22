@@ -138,7 +138,6 @@ public class BirthdayPartyRepositoryImpl implements BirthdayPartyRepository{
         catch(ClassNotFoundException e){
             e.printStackTrace();
         }
-        System.out.println("");
         return java.util.Optional.of(birthdayPartyDto);
 
     }
