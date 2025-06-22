@@ -97,4 +97,14 @@ public class BirthdayPartyServiceImpl implements BirthdayPartyService{
         }
         return Optional.empty();
     }
+
+    @Override
+    public Optional<BirthdayPartyDto> findById(int id) {
+        BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
+        Optional<BirthdayPartyDto> optionalBirthdayPartyDto=birthdayPartyRepository.findByID(id);
+        if(optionalBirthdayPartyDto.isPresent()){
+            return optionalBirthdayPartyDto;
+        }
+        return Optional.empty();
+    }
 }

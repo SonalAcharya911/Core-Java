@@ -10,4 +10,7 @@ public interface BirthdayPartyService {
     default Optional<BirthdayPartyDto[]> findAll(){
         return Optional.empty();
     }
+    default Optional<BirthdayPartyDto> findById(int id){
+        return Optional.empty();
+    }
 }
