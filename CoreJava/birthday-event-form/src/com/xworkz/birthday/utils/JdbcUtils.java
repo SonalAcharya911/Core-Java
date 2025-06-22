@@ -3,8 +3,6 @@ package com.xworkz.birthday.utils;
 public class JdbcUtils {
     public JdbcUtils(){
         System.out.println("no args contructor of JdbcUtils");
-        System.out.println();
-        System.err.println();
     }
 
     public final static String URL ="jdbc:mysql://localhost:3306/weather";
