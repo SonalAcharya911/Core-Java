@@ -29,6 +29,31 @@ public class CampingAccessoriesRunner {
         Iterator<CampingAccessoriesDto> iterator= collection.iterator();
         while(iterator.hasNext()){
             System.out.println(iterator.next());
+
+            if(iterator.next().equals("Yellow")){
+                iterator.remove();
+            }
+            if(collection.contains("Rope")){
+                System.out.println(iterator+" : contains rope");
+            }
+
+            if(collection.isEmpty()){
+                System.out.println("collection is empty");
+            }
+
+            if(collection.addAll(collection)){
+
+                System.out.println("addAll method");
+            }
+
+            if(collection.containsAll(collection)){
+                System.out.println("containsAll success");
+
+            }
+            if(collection.removeAll(collection)){
+                System.out.println("remove all success");
+            }
+
         }
 
         System.out.println("camping accessories suitable for all seasons");

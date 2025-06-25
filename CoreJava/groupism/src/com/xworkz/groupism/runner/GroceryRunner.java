@@ -33,6 +33,28 @@ public class GroceryRunner {
             if(iterator.next().getQuantity().equals("1 kg")){
                 System.out.println(iterator);
             }
+
+            if(collection.contains("Chiffon")){
+                System.out.println(iterator+" : contains red");
+            }
+
+            if(collection.isEmpty()){
+                System.out.println("collection is empty");
+            }
+
+            if(collection.addAll(collection)){
+
+                System.out.println("addAll method");
+            }
+
+            if(collection.containsAll(collection)){
+                System.out.println("containsAll success");
+
+            }
+            if(collection.removeAll(collection)){
+                System.out.println("remove all success");
+            }
+
         }
 
     }

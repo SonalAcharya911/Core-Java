@@ -30,6 +30,30 @@ public class AppliancesRunner {
 
         while(iterator.hasNext()){
             System.out.println(iterator.next());
+            if(iterator.next().getName().equals("Geyser")){
+                iterator.remove();
+            }
+            if(appliancesDtos.contains("Chiffon")){
+                System.out.println(iterator+" : contains red");
+            }
+
+            if(appliancesDtos.isEmpty()){
+                System.out.println("appliancesDtos is empty");
+            }
+
+            if(appliancesDtos.addAll(appliancesDtos)){
+
+                System.out.println("addAll method");
+            }
+
+            if(appliancesDtos.containsAll(appliancesDtos)){
+                System.out.println("containsAll success");
+
+            }
+            if(appliancesDtos.removeAll(appliancesDtos)){
+                System.out.println("remove all success");
+            }
+
         }
 
         System.out.println("Appliances above 10,000 Rs.");

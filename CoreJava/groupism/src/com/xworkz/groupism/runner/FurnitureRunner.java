@@ -36,6 +36,27 @@ public class FurnitureRunner {
             if(furnitureDto.getPrice()>10000){
                 System.out.println(furnitureDto);
             }
+            if(furnitureDtos.contains("Chiffon")){
+                System.out.println(iterator+" : contains red");
+            }
+
+            if(furnitureDtos.isEmpty()){
+                System.out.println("furnitureDtos is empty");
+            }
+
+            if(furnitureDtos.addAll(furnitureDtos)){
+
+                System.out.println("addAll method");
+            }
+
+            if(furnitureDtos.containsAll(furnitureDtos)){
+                System.out.println("containsAll success");
+
+            }
+            if(furnitureDtos.removeAll(furnitureDtos)){
+                System.out.println("remove all success");
+            }
+
         }
 
     }
