@@ -1,34 +1,18 @@
 package com.xworkz.groupism.runner;
 
 import com.xworkz.groupism.dto.FurnitureDto;
+import com.xworkz.groupism.repository.FurnitureRepository;
+import com.xworkz.groupism.repository.FurnitureRepositoryImpl;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class FurnitureRunner {
     public static void main(String[] args) {
-        FurnitureDto furnitureDto1 = new FurnitureDto("Dining Table", "Sheesham Wood", 18999, "Walnut Brown", "Urban Ladder");
-        FurnitureDto furnitureDto2 = new FurnitureDto("Office Chair", "Mesh & Plastic", 5499, "Black", "Green Soul");
-        FurnitureDto furnitureDto3 = new FurnitureDto("Sofa Set", "Fabric & Wood", 28999, "Charcoal Grey", "Wakefit");
-        FurnitureDto furnitureDto4 = new FurnitureDto("Bookshelf", "Engineered Wood", 6999, "Wenge", "Godrej Interio");
-        FurnitureDto furnitureDto5 = new FurnitureDto("Coffee Table", "Glass & Metal", 4999, "Transparent", "Home Centre");
-        FurnitureDto furnitureDto6 = new FurnitureDto("Wardrobe", "Engineered Wood", 15999, "Matte Brown", "Nilkamal");
-        FurnitureDto furnitureDto7 = new FurnitureDto("Bed Frame", "Solid Wood", 21999, "Honey Finish", "Durian");
-        FurnitureDto furnitureDto8 = new FurnitureDto("TV Unit", "MDF", 8999, "Teak Finish", "Flipkart SmartBuy");
-        FurnitureDto furnitureDto9 = new FurnitureDto("Study Table", "Particle Board", 3999, "White Maple", "IKEA");
-        FurnitureDto furnitureDto10 = new FurnitureDto("Recliner", "Leatherette", 19999, "Chocolate Brown", "Amazon Basics");
+        FurnitureRepository furnitureRepository=new FurnitureRepositoryImpl();
 
-        Collection<FurnitureDto> furnitureDtos=new ArrayList<>();
-        furnitureDtos.add(furnitureDto1);
-        furnitureDtos.add(furnitureDto2);
-        furnitureDtos.add(furnitureDto3);
-        furnitureDtos.add(furnitureDto4);
-        furnitureDtos.add(furnitureDto5);
-        furnitureDtos.add(furnitureDto6);
-        furnitureDtos.add(furnitureDto7);
-        furnitureDtos.add(furnitureDto8);
-        furnitureDtos.add(furnitureDto9);
-        furnitureDtos.add(furnitureDto10);
+        Collection<FurnitureDto> furnitureDtos=furnitureRepository.findaAll();
 
         System.out.println("Furniture info");
         for (FurnitureDto furnitureDto:furnitureDtos){
@@ -37,6 +21,21 @@ public class FurnitureRunner {
             System.out.println("price: "+furnitureDto.getPrice());
             System.out.println("color: "+ furnitureDto.getColor());
             System.out.println("brand: "+ furnitureDto.getBrand());
+        }
+
+        System.out.println("using iterator");
+
+        Iterator<FurnitureDto> iterator=furnitureDtos.iterator();
+
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        System.out.println("Furnitures above Rs.10,000");
+        for(FurnitureDto furnitureDto:furnitureDtos){
+            if(furnitureDto.getPrice()>10000){
+                System.out.println(furnitureDto);
+            }
         }
 
     }
