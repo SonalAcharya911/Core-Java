@@ -54,8 +54,6 @@ public class GroceryRunner {
             if(collection.removeAll(collection)){
                 System.out.println("remove all success");
             }
-
         }
-
     }
 }
