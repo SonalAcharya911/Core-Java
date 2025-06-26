@@ -62,7 +62,5 @@ public class CampingAccessoriesRunner {
                 System.out.println(campingAccessoriesDto);
             }
         }
-
-
     }
 }
