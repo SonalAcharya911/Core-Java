@@ -165,6 +165,31 @@ public class FunctionRunner {
         };
         System.out.println("result: "+intUnaryOperator.applyAsInt(9));
 
+        LongBinaryOperator longBinaryOperator=()->{};
+        LongConsumer longConsumer=()->{};
+        LongFunction<> longFunction=()->{};
+        LongPredicate longPredicate=()->{};
+        LongSupplier longSupplier=()->{};
+        LongToDoubleFunction longToDoubleFunction=()->{};
+        LongToIntFunction longToIntFunction=()->{};
+        LongUnaryOperator longUnaryOperator=()->{};
+
+        ObjDoubleConsumer<> objDoubleConsumer=()->{};
+        ObjIntConsumer<> objIntConsumer=()->{};
+        ObjLongConsumer<> objLongConsumer=()->{};
+
+        Predicate<> predicate=()->{};
+        Supplier<> supplier=()->{};
+
+        ToDoubleBiFunction<,> toDoubleBiFunction=()->{};
+        ToDoubleBiFunction<> toDoubleFunction=()->{};
+        ToIntBiFunction<> toIntBiFunction=()->{};
+        ToIntFunction<> toIntFunction=()->{};
+        ToLongBiFunction<> toLongBiFunction=()->{};
+        ToLongFunction<> toLongFunction=()->{};
+
+        UnaryOperator<> unaryOperator=()->{};
+
 
 
 
