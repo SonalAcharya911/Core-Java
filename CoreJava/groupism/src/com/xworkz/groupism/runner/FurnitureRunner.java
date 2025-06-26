@@ -56,7 +56,6 @@ public class FurnitureRunner {
             if(furnitureDtos.removeAll(furnitureDtos)){
                 System.out.println("remove all success");
             }
-
         }
 
     }
