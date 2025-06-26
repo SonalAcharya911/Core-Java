@@ -55,12 +55,6 @@ public class SareeRunner {
             if(collection.removeAll(collection)){
                 System.out.println("remove all success");
             }
-
-
-
         }
-
-
     }
-
 }
