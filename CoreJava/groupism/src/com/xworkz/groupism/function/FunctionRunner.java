@@ -4,6 +4,13 @@ import java.util.Comparator;
 import java.util.function.*;
 
 public class FunctionRunner {
+    long left;
+    long right;
+
+//    public FunctionRunner(long left,long right){
+//        this.left=left;
+//        this.right=right;
+//    }
     public static void main(String[] args) {
         BiConsumer<String,Integer> biConsumer=(name,age)->{
             System.out.println("running accept in BiConsumer");
@@ -165,30 +172,119 @@ public class FunctionRunner {
         };
         System.out.println("result: "+intUnaryOperator.applyAsInt(9));
 
-        LongBinaryOperator longBinaryOperator=()->{};
-        LongConsumer longConsumer=()->{};
-        LongFunction<> longFunction=()->{};
-        LongPredicate longPredicate=()->{};
-        LongSupplier longSupplier=()->{};
-        LongToDoubleFunction longToDoubleFunction=()->{};
-        LongToIntFunction longToIntFunction=()->{};
-        LongUnaryOperator longUnaryOperator=()->{};
+        LongBinaryOperator longBinaryOperator=(left,right)->{
+            System.out.println("running applyAsLong in LongBinaryOperator");
+            return left-right;
 
-        ObjDoubleConsumer<> objDoubleConsumer=()->{};
-        ObjIntConsumer<> objIntConsumer=()->{};
-        ObjLongConsumer<> objLongConsumer=()->{};
+        };
+        System.out.println("result: "+longBinaryOperator.applyAsLong(20,17));
 
-        Predicate<> predicate=()->{};
-        Supplier<> supplier=()->{};
+        LongConsumer longConsumer=(value)->{
+            System.out.println("running accept in LongConsumer");
+            System.out.println("value: "+value);
+        };
 
-        ToDoubleBiFunction<,> toDoubleBiFunction=()->{};
-        ToDoubleBiFunction<> toDoubleFunction=()->{};
-        ToIntBiFunction<> toIntBiFunction=()->{};
-        ToIntFunction<> toIntFunction=()->{};
-        ToLongBiFunction<> toLongBiFunction=()->{};
-        ToLongFunction<> toLongFunction=()->{};
 
-        UnaryOperator<> unaryOperator=()->{};
+        LongFunction<Boolean> longFunction=(phone)->{
+            if(phone!=7406508813L){
+                return false;
+            }
+            return true;
+        };
+        System.out.println("result: "+longFunction.apply(9740126919L));
+
+        LongPredicate longPredicate=(studentId)->{
+            if(studentId!=37){
+                return false;
+            }
+            return true;
+        };
+        System.out.println("student id is correct?: "+longPredicate.test(38));
+
+        LongSupplier longSupplier=()->{
+            System.out.println("running getAsLong in LongSupplier");
+            long contact=9739257715L;
+            return contact;
+        };
+        System.out.println("contact number is: "+longSupplier.getAsLong());
+
+        LongToDoubleFunction longToDoubleFunction=(value)->{
+            double doubleValue=(double) value;
+            return doubleValue;
+        };
+        System.out.println("double value: "+longToDoubleFunction.applyAsDouble(3456798));
+        LongToIntFunction longToIntFunction=(value)->{
+            System.out.println("running applyAsInt in LongToInt");
+            int intValue=(int) value;
+            return intValue;
+        };
+        System.out.println("int Value: "+longToIntFunction.applyAsInt(123));
+
+        LongUnaryOperator longUnaryOperator=(operand)->{
+            System.out.println("running applyAsLong of LongUnaryOperator");
+            operand=operand+1;
+            return operand;
+
+        };
+        System.out.println("next value: "+ longUnaryOperator.applyAsLong(852));
+
+        ObjDoubleConsumer<String> objDoubleConsumer=(name,salary)->{
+            System.out.println("Name: "+name);
+            System.out.println("Salary: "+salary);
+        };
+        objDoubleConsumer.accept("Sonal",63852.00);
+
+        ObjIntConsumer<String> objIntConsumer=(name,rollNo)->{
+            System.out.println("name: "+name);
+            System.out.println("rollNo: "+rollNo);
+        };
+        objIntConsumer.accept("Sonal",37);
+
+        ObjLongConsumer<String> objLongConsumer=(name,phone)->{
+            System.out.println("Name: "+name);
+            System.out.println("Phone: "+phone);
+        };
+        objLongConsumer.accept("Sonal",7483420737L);
+
+
+        Predicate<String> predicate=(name)->{
+            if(name.equalsIgnoreCase("Sonal")) return true;
+            return false;
+        };
+        System.out.println("name match result: "+predicate.test("SONAL"));
+
+        Supplier<String> supplier=()->{
+            System.out.println("name is ");
+            return "Sonal";
+        };
+        System.out.println(supplier.get());
+
+        ToDoubleBiFunction<Integer,Long> toDoubleBiFunction=(intValue,longValue)->{
+            double difference=(double) longValue-(double) intValue;
+            return difference;
+        };
+        System.out.println("difference: "+toDoubleBiFunction.applyAsDouble(4536,987456321L));
+
+        ToDoubleFunction<Integer> toDoubleFunction=(intValue)->{
+            return (double) intValue;
+        };
+        System.out.println(toDoubleFunction.applyAsDouble(7418));
+
+        ToIntBiFunction<Long,Double> toIntBiFunction=(longValue,doubleValue)->{
+            if(longValue==456321 && doubleValue==741.00){
+                return 1;
+            }
+            return 0;
+        };
+        toIntBiFunction.applyAsInt(456321L,741.00);
+
+//        ToIntFunction<Long> toIntFunction=(longValue)->{
+////            return (int) longValue;
+//        };
+////        ToLongBiFunction<> toLongBiFunction=()->{};
+//        ToLongFunction<> toLongFunction=()->{};
+//
+//        UnaryOperator<> unaryOperator=()->{};
 
 
 
