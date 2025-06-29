@@ -64,7 +64,7 @@ public class BirthdayPartyServlet extends HttpServlet {
         birthdayPartyService.findAll();
 
         if(birthdayPartyService.findAll().isPresent()){
-
+            System.out.println("found all in service...");
         }
 
         String guestId=req.getParameter("guestId");
