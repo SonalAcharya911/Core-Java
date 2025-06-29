@@ -35,6 +35,7 @@ public class BirthdayPartyServlet extends HttpServlet {
             BirthdayPartyDto birthdayPartyDto=new BirthdayPartyDto(0,guestName,contactNumber,email,rsvpStatus,numberOfAttendees,foodPref,specialRequests, LocalDate.now(), LocalTime.now());
 
             BirthdayPartyService birthdayPartyService=new BirthdayPartyServiceImpl();
+
             if(birthdayPartyService.validate(birthdayPartyDto)==true){
                 req.setAttribute("result","saved Successfully");
                 System.out.println("data saved successfully");
