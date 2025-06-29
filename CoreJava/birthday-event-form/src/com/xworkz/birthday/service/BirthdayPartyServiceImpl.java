@@ -3,8 +3,6 @@ package com.xworkz.birthday.service;
 import com.xworkz.birthday.dto.BirthdayPartyDto;
 import com.xworkz.birthday.repository.BirthdayPartyRepository;
 import com.xworkz.birthday.repository.BirthdayPartyRepositoryImpl;
-import jdk.nashorn.internal.runtime.options.Option;
-
 import java.util.Optional;
 
 public class BirthdayPartyServiceImpl implements BirthdayPartyService{
@@ -101,11 +99,20 @@ public class BirthdayPartyServiceImpl implements BirthdayPartyService{
 
     @Override
     public Optional<BirthdayPartyDto> findById(int id) {
-        BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
-        Optional<BirthdayPartyDto> optionalBirthdayPartyDto=birthdayPartyRepository.findByID(id);
-        if(optionalBirthdayPartyDto.isPresent()){
-            return optionalBirthdayPartyDto;
+        if(id!=0){
+            BirthdayPartyRepository birthdayPartyRepository=new BirthdayPartyRepositoryImpl();
+            Optional<BirthdayPartyDto> optionalBirthdayPartyDto=birthdayPartyRepository.findByID(id);
+            if(optionalBirthdayPartyDto.isPresent()){
+                return optionalBirthdayPartyDto;
+            }
+            else{
+                return Optional.empty();
+            }
         }
+        else{
+            System.out.println("id is 0...must be greater than 0..");
+        }
+
         return Optional.empty();
     }
 }

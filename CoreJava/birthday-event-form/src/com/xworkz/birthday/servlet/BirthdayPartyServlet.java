@@ -49,12 +49,8 @@ public class BirthdayPartyServlet extends HttpServlet {
             RequestDispatcher requestDispatcher=req.getRequestDispatcher("BirthdayForm.jsp");
             requestDispatcher.forward(req,resp);
 
-            System.out.println("");
-
-
-
+            System.out.println("data is finally saved .....");
         }
-
     }
 
     @Override
