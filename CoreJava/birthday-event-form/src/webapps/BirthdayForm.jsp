@@ -58,7 +58,8 @@
 <div class="form-section">
     <h2 class="form-title text-center">🎉 Birthday Guest Entry Form 🎂</h2>
     <form action="saveGuest" method="post">
-        <span><h6 style="color: green">${success}</h6><h6 style="color: red">${failure}</h6></span>
+        <span><h6 style="color: green">${success}</h6>
+            <h6 style="color: red">${failure}</h6></span>
         <div class="mb-3">
             <label for="guestName" class="form-label">Guest Name</label>
             <input type="text" class="form-control" id="guestName" name="guestName" required placeholder="${dto.guestName}">
