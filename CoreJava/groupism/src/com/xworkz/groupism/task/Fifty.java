@@ -16,9 +16,13 @@ public class Fifty {
         numbers.add(57);
 
         Iterator<Integer> iterator=numbers.iterator();
-        while
+        while(iterator.hasNext()){
+            if(iterator.next()>50){
+                iterator.remove();
+            }
+        }
 
-        while()
+        
     }
 
 
