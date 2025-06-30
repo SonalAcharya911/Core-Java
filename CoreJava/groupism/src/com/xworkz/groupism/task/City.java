@@ -17,9 +17,31 @@ public class City {
 
         Iterator<String> iterator= cities.iterator();
 
+        String result="";
         System.out.println("Cities: ");
         while(iterator.hasNext()){
             System.out.println(iterator.next());
         }
+
+        System.out.println("======================");
+
+        while(iterator.hasNext()){
+            if(iterator.next().equals("Chennai")){
+                iterator.remove();
+            }
+            result=iterator.next().replace("Chennai","Ahmedabad");
+        }
+
+        System.out.println(result);
+
+        if(cities.contains("Hello")){
+            System.out.println("Hello present");
+        }
+        else{
+            System.out.println("Hello absent");
+        }
+
+
+
     }
 }
