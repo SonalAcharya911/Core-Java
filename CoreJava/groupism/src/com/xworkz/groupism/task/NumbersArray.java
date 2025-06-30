@@ -18,5 +18,11 @@ public class NumbersArray {
         numbers.add(10);
 
         System.out.println(numbers);
+
+        numbers.add(2,99);
+
+        System.out.println(numbers);
+
+        numbers.clear();
     }
 }
