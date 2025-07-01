@@ -22,5 +22,7 @@ public class ArrayHashAdd {
 
 
         System.out.println(bottomWear);
+
+        clothes.stream().filter(e->e.length()>3).forEach(e-> System.out.println(e));
     }
 }
