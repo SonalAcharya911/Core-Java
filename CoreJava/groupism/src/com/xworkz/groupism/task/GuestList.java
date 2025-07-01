@@ -1,5 +1,7 @@
 package com.xworkz.groupism.task;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -34,11 +36,6 @@ public class GuestList {
         boolean present=guests.containsAll(guests);//5
         System.out.println(present);
 
-
-
-
-
-
         System.out.println("================================================");
 
         Set<String> names=new TreeSet<>();//slowest
@@ -57,6 +54,8 @@ public class GuestList {
         cousins.add("meenu");
         cousins.add("Akhil");
         System.out.println(cousins);
+
+       // PolicyUtils.Collections
 
         names.addAll(cousins); //2
         System.out.println(names);
