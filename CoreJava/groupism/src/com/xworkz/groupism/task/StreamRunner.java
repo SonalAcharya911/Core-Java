@@ -30,10 +30,8 @@ public class StreamRunner {
 
         System.out.println("numbers greater than 50: "+numbers);
 
-
-        collection.stream().filter((e)->e>50)//Predicate true  --> strea
+        collection.stream().filter((e)->e>50)//Predicate true  --> stream
                 .forEach(e-> System.out.println(e));// Consumer
-
 
     }
 }
