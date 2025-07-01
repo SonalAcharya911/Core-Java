@@ -26,6 +26,9 @@ public class RandomTree {
                 iterator.remove();
             }
         }
+        numbers.stream().filter(e->e==1).forEach(e-> System.out.println(e));
+
+
     }
 
 }
