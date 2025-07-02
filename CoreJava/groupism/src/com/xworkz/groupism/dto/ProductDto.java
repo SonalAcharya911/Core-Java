@@ -11,14 +11,20 @@ import java.util.Date;
 @Setter
 @ToString
 @AllArgsConstructor
-public class ProductDto {
+public class ProductDto implements Comparable<ProductDto>{
     private int id;
     private String name;
     private String type;
-    private Date manufauturedDate;
+    private Date manufacturedDate;
     private String manufacturer;
     private double costPerItem;
     private int discount;
     private int quantity;
     private int warranty;
+
+    @Override
+    public int compareTo(ProductDto o) {
+        System.out.println("running compareTo");
+        return Double.compare(this.id,o.id);
+    }
 }
