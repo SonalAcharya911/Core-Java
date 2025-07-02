@@ -1,7 +1,6 @@
 package com.xworkz.groupism.task;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class StreamRunner {
@@ -19,19 +18,15 @@ public class StreamRunner {
         collection.add(50);
         System.out.println("Original collection: "+collection);
 
-        System.out.println("====================");
+    collection
+            .stream()
+            .filter(e->e<50)
+            .sorted(Comparator.reverseOrder())
+            .forEach(System.out::println);
 
-        Collection<Integer> numbers=new ArrayList<>();
-        for(int coll: collection){
-            if(coll>50){
-                numbers.add(coll);
-            }
-        }
+       // Collections.sort((List)collection);
 
-        System.out.println("numbers greater than 50: "+numbers);
 
-        collection.stream().filter((e)->e>50)//Predicate true  --> stream
-                .forEach(e-> System.out.println(e));// Consumer
 
     }
 }
