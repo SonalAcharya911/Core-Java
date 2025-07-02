@@ -39,6 +39,22 @@ public class ProductRepositoryImpl implements ProductRepository{
         ProductDto productDto27=new ProductDto();
         ProductDto productDto28=new ProductDto();
         ProductDto productDto29=new ProductDto();
+        ProductDto productDto30=new ProductDto();
+        ProductDto productDto31=new ProductDto();
+        ProductDto productDto32=new ProductDto();
+        ProductDto productDto33=new ProductDto();
+        ProductDto productDto34=new ProductDto();
+        ProductDto productDto35=new ProductDto();
+        ProductDto productDto36=new ProductDto();
+        ProductDto productDto37=new ProductDto();
+        ProductDto productDto38=new ProductDto();
+        ProductDto productDto39=new ProductDto();
+        ProductDto productDto40=new ProductDto();
+        ProductDto productDto41=new ProductDto();
+        ProductDto productDto42=new ProductDto();
+        ProductDto productDto43=new ProductDto();
+        ProductDto productDto44=new ProductDto();
+
 
         Collection<ProductDto> products=new ArrayList<>();
         products.add(productDto1);
