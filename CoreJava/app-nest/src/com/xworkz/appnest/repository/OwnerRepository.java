@@ -1,4 +1,5 @@
 package com.xworkz.appnest.repository;
 
-public class OwnerRepository {
+public interface OwnerRepository {
+
 }
