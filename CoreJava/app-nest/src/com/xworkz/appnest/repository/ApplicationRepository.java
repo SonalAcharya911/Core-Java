@@ -1,4 +1,4 @@
 package com.xworkz.appnest.repository;
 
-public class ApplicationRepository {
+public interface ApplicationRepository {
 }
