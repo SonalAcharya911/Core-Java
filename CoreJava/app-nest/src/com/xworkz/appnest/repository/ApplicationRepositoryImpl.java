@@ -1,6 +1,7 @@
 package com.xworkz.appnest.repository;
 
 import com.xworkz.appnest.constant.Type;
+import com.xworkz.appnest.constant.Version;
 import com.xworkz.appnest.dto.ApplicationDto;
 import com.xworkz.appnest.dto.OwnerDto;
 
@@ -231,7 +232,10 @@ public class ApplicationRepositoryImpl implements ApplicationRepository{
         owners50.add(owner50b);
 
 
-        ApplicationDto applicationDto1 = new ApplicationDto("WhatsApp", Type.COMMUNICATION, 36.5, LocalDate.of(2009, 1, 24), owners1);
+        OwnerRepository ownerRepository=new OwnerRepositoryImpl();
+        List<List<OwnerDto>> ownersAll=ownerRepository.getOwnerDto();
+
+        ApplicationDto applicationDto1 = new ApplicationDto("WhatsApp", Type.COMMUNICATION, 36.5, LocalDate.of(2009, 1, 24), ownersAll.get(0), Version.V_1,false,0);
         ApplicationDto applicationDto2 = new ApplicationDto("Spotify", Type.ENTERTAINMENT, 78.2, LocalDate.of(2008, 10, 7), owners2);
         ApplicationDto applicationDto3 = new ApplicationDto("Canva", Type.CREATIVE, 102.3, LocalDate.of(2013, 1, 1), owners3);
         ApplicationDto applicationDto4 = new ApplicationDto("Microsoft Word", Type.PRODUCTIVITY, 287.0, LocalDate.of(1983, 10, 25), owners4);
