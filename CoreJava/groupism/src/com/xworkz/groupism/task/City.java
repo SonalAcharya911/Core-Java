@@ -17,11 +17,7 @@ public class City {
 
 
 
-        cities.strint final index=0;
-        cities.stream().filter(e->e.length()>6).forEach(e->{
-            index++;
-            System.out.println(index);
-        });eam().filter(e->e.matches("Toy")).forEach(System.out::println);
+
 
 
         Iterator<String> iterator= cities.iterator();
