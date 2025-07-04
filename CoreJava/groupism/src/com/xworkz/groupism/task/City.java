@@ -15,8 +15,18 @@ public class City {
         cities.add("Hyderabad");
         cities.add("Chennai");
 
+
+
+        cities.strint final index=0;
+        cities.stream().filter(e->e.length()>6).forEach(e->{
+            index++;
+            System.out.println(index);
+        });eam().filter(e->e.matches("Toy")).forEach(System.out::println);
+
+
         Iterator<String> iterator= cities.iterator();
 
+        System.out.println("==========================");
         String result="";
         System.out.println("Cities: ");
         while(iterator.hasNext()){
