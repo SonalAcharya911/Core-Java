@@ -1,6 +1,7 @@
 package com.xworkz.appnest.dto;
 
 import com.xworkz.appnest.constant.Type;
+import com.xworkz.appnest.constant.Version;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,5 +20,7 @@ public class ApplicationDto {
     private double size;
     private LocalDate manufactureDate;
     private List<OwnerDto> owner;
-
+    private Version version;
+    private boolean free;
+    private double chargePerUser;
 }
