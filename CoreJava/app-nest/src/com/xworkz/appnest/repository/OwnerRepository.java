@@ -1,5 +1,9 @@
 package com.xworkz.appnest.repository;
 
+import com.xworkz.appnest.dto.OwnerDto;
+
+import java.util.List;
+
 public interface OwnerRepository {
-    void getOwnerDto();
+    List<OwnerDto> getOwnerDto();
 }
