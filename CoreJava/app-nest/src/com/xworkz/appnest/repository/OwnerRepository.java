@@ -5,5 +5,5 @@ import com.xworkz.appnest.dto.OwnerDto;
 import java.util.List;
 
 public interface OwnerRepository {
-    List<OwnerDto> getOwnerDto();
+    List<List<OwnerDto>> getOwnerDto();
 }
