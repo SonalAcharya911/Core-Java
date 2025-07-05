@@ -7,7 +7,7 @@ import java.util.List;
 
 public class OwnerRepositoryImpl implements OwnerRepository{
     @Override
-    public List<OwnerDto> getOwnerDto() {
+    public List<List<OwnerDto>> getOwnerDto() {
         OwnerDto owner1 = new OwnerDto("Meta Platforms Inc.", "support@whatsapp.com", 16502530000L);
         List<OwnerDto> owners1=new ArrayList<>();
         owners1.add(owner1);
@@ -224,11 +224,11 @@ public class OwnerRepositoryImpl implements OwnerRepository{
         owners50.add(owner50a);
         owners50.add(owner50b);
 
-        List<OwnerDto> owners=new ArrayList<>();
-        owners.addAll(owners1);
-        owners.addAll(owners2);
+        owners50.add(owners50.get(owners50.indexOf(owner50a)));
 
-
+        List<List<OwnerDto>> owners=new ArrayList<>();
+        owners.add(owners1);
+        owners.add(owners2);
 
         return owners;
 
