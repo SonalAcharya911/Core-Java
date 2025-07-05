@@ -1,10 +1,8 @@
 package com.xworkz.appnest.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
+@Data
 @Getter
 @Setter
 @AllArgsConstructor
