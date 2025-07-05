@@ -2,14 +2,12 @@ package com.xworkz.appnest.dto;
 
 import com.xworkz.appnest.constant.Type;
 import com.xworkz.appnest.constant.Version;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Data
 @Getter
 @Setter
 @AllArgsConstructor
