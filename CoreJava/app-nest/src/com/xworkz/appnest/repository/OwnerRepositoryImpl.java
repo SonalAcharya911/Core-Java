@@ -227,8 +227,57 @@ public class OwnerRepositoryImpl implements OwnerRepository{
         owners50.add(owners50.get(owners50.indexOf(owner50a)));
 
         List<List<OwnerDto>> owners=new ArrayList<>();
+
         owners.add(owners1);
         owners.add(owners2);
+        owners.add(owners3);
+        owners.add(owners4);
+        owners.add(owners5);
+        owners.add(owners6);
+        owners.add(owners7);
+        owners.add(owners8);
+        owners.add(owners9);
+        owners.add(owners10);
+        owners.add(owners11);
+        owners.add(owners12);
+        owners.add(owners13);
+        owners.add(owners14);
+        owners.add(owners15);
+        owners.add(owners16);
+        owners.add(owners17);
+        owners.add(owners18);
+        owners.add(owners19);
+        owners.add(owners20);
+        owners.add(owners21);
+        owners.add(owners22);
+        owners.add(owners23);
+        owners.add(owners24);
+        owners.add(owners25);
+        owners.add(owners26);
+        owners.add(owners27);
+        owners.add(owners28);
+        owners.add(owners29);
+        owners.add(owners30);
+        owners.add(owners31);
+        owners.add(owners32);
+        owners.add(owners33);
+        owners.add(owners34);
+        owners.add(owners35);
+        owners.add(owners36);
+        owners.add(owners37);
+        owners.add(owners38);
+        owners.add(owners39);
+        owners.add(owners40);
+        owners.add(owners41);
+        owners.add(owners42);
+        owners.add(owners43);
+        owners.add(owners44);
+        owners.add(owners45);
+        owners.add(owners46);
+        owners.add(owners47);
+        owners.add(owners48);
+        owners.add(owners49);
+        owners.add(owners50);
 
         return owners;
 
