@@ -33,8 +33,8 @@ public class ApplicationRepositoryImpl implements ApplicationRepository{
         ApplicationDto applicationDto13 = new ApplicationDto("Slack", Type.PRODUCTIVITY, 48.5, LocalDate.of(2013, 8, 14), ownersAll.get(12),Version.V_1,false,19);
         ApplicationDto applicationDto14 = new ApplicationDto("Google Drive", Type.UTILITY, 109.2, LocalDate.of(2012, 4, 24), ownersAll.get(13),Version.V_2,true,0);
         ApplicationDto applicationDto15 = new ApplicationDto("Paytm", Type.FINANCE, 40.1, LocalDate.of(2014, 2, 10), ownersAll.get(14),Version.V_3,true,0);
-        ApplicationDto applicationDto16 = new ApplicationDto("Flipkart", Type.SHOPPING, 70.0, LocalDate.of(2007, 9, 15), ownersAll.get(15),);
-//        ApplicationDto applicationDto17 = new ApplicationDto("Amazon", Type.SHOPPING, 95.3, LocalDate.of(2008, 6, 11), owners17);
+        ApplicationDto applicationDto16 = new ApplicationDto("Flipkart", Type.SHOPPING, 70.0, LocalDate.of(2007, 9, 15), ownersAll.get(15),true, 0);
+        ApplicationDto applicationDto17 = new ApplicationDto("Amazon", Type.SHOPPING, 95.3, LocalDate.of(2008, 6, 11), owners17);
 //        ApplicationDto applicationDto18 = new ApplicationDto("Apple Music", Type.ENTERTAINMENT, 80.0, LocalDate.of(2015, 6, 30), owners18);
 //        ApplicationDto applicationDto19 = new ApplicationDto("Samsung Health", Type.HEALTH, 67.2, LocalDate.of(2013, 7, 10), owners19);
 //        ApplicationDto applicationDto20 = new ApplicationDto("Swiggy", Type.FOOD, 45.8, LocalDate.of(2014, 8, 14), owners20);
