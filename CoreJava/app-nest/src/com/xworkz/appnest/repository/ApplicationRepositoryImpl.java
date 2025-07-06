@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ApplicationRepositoryImpl implements ApplicationRepository{
     @Override
-    public Collection<ApplicationDto> findAll() {
+    public List<ApplicationDto> findAll() {
 
         OwnerRepository ownerRepository=new OwnerRepositoryImpl();
         List<List<OwnerDto>> ownersAll=ownerRepository.getOwnerDto();
@@ -70,7 +70,7 @@ public class ApplicationRepositoryImpl implements ApplicationRepository{
         ApplicationDto applicationDto50 = new ApplicationDto("Udemy", Type.EDUCATION, 74.7, LocalDate.of(2010, 5, 11), ownersAll.get(49), Version.V_2, false, 499);
 
 
-        Collection<ApplicationDto> applicationDTOs=new ArrayList<>();
+        List<ApplicationDto> applicationDTOs=new ArrayList<>();
         applicationDTOs.add(applicationDto1);
         applicationDTOs.add(applicationDto2);
         applicationDTOs.add(applicationDto3);
