@@ -40,7 +40,7 @@ public class ApplicationRunner {
         applicationDTOs.stream().sorted((dto1,dto2)->Double.compare(dto2.getSize(),dto1.getSize())).forEach(System.out::println);
 
         System.out.println("==================Find the version by name,type=====================");
-        applicationDTOs.stream().filter(applicationDto -> applicationDto.getAppName().equals(appName) && applicationDto.getType().equals(type)).forEach(System.out::println);
+        applicationDTOs.stream().filter(applicationDto -> applicationDto.getAppName().equalsIgnoreCase(appName) && applicationDto.getType().equals(type)).map(ApplicationDto::getVersion).forEach(System.out::println);
 
         System.out.println("================= Find all applications by ownerName================");
         String ownerName="Ajio";
