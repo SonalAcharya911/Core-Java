@@ -4,6 +4,7 @@ import com.xworkz.mappy.dto.CustomerDto;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class CustomerRunner {
     public static void main(String[] args) {
@@ -64,6 +65,13 @@ public class CustomerRunner {
 
         customerItemsMap.keySet().forEach(System.out::println);
         customerItemsMap.values().forEach(System.out::println);
+
+        Set<Map.Entry<CustomerDto,String[]>> entrySet= customerItemsMap.entrySet();
+
+        entrySet.forEach(e->{
+            System.out.println("key: "+e.getKey()+", value: "+e.getValue());
+        });
+
 
 
     }
