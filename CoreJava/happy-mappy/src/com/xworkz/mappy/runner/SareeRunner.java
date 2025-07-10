@@ -1,11 +1,9 @@
 package com.xworkz.mappy.runner;
 
+import com.xworkz.mappy.dto.CustomerDto;
 import com.xworkz.mappy.dto.SareeDto;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SareeRunner {
     public static void main(String[] args) {
@@ -92,7 +90,13 @@ public class SareeRunner {
         
         
         sareeColormap.keySet().forEach(System.out::println);
-        sareeColormap.values().forEach(System.out::println); 
+        sareeColormap.values().forEach(System.out::println);
+
+        Set<Map.Entry<SareeDto,List<String>>> entrySet= sareeColormap.entrySet();
+
+        entrySet.forEach(e->{
+            System.out.println("key: "+e.getKey()+", value: "+e.getValue());
+        });
         
                 
     }
