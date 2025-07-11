@@ -4,6 +4,7 @@ import com.xworkz.mappy.dto.UniversityDto;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class UniversityRunner {
     public static void main(String[] args) {
@@ -176,9 +177,16 @@ public class UniversityRunner {
         universityDepartmentsMap.put(universityDto24, deptMap24);
         universityDepartmentsMap.put(universityDto25, deptMap25);
 
+        System.out.println("=========values===========");
         universityDepartmentsMap.values().forEach(System.out::println);
-
+        System.out.println("=========keys===========");
         universityDepartmentsMap.keySet().forEach(System.out::println);
+
+        Set<Map.Entry<UniversityDto,Map<String,String>>> entrySet=universityDepartmentsMap.entrySet();
+
+        entrySet.forEach(e->{
+            System.out.println("university: "+e.getKey().getName()+", HODs: "+e.getValue());
+        });
 
     }
 }

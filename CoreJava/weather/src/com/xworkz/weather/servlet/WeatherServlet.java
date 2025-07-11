@@ -57,9 +57,5 @@ public class WeatherServlet extends HttpServlet {
 //            req.setAttribute("message", "Saving of Weather details Failed");
 //            requestDispatcher.forward(req,resp);
 //        }
-
-
-
-
     }
 }
