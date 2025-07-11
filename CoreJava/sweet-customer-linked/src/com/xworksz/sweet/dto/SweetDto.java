@@ -28,10 +28,12 @@ public class SweetDto {
         if(obj!=null){
             if(obj instanceof SweetDto){
                 SweetDto sweet=(SweetDto) obj;
-                Set<String> thisSet = new TreeSet<>(Arrays.asList(this.ingredients));
-                Set<String> sweetSet = new TreeSet<>(Arrays.asList(sweet.ingredients));
+//                Set<String> thisSet = new TreeSet<>(Arrays.asList(this.ingredients));
+//                Set<String> sweetSet = new TreeSet<>(Arrays.asList(sweet.ingredients));
+//
+//                return thisSet.equals(sweetSet);
 
-                return thisSet.equals(sweetSet);
+                return Arrays.equals(this.ingredients,sweet.ingredients);
             }
         }
         return false;
