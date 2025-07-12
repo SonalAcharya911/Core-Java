@@ -44,6 +44,7 @@ public class JobMap {
         jobDTOMap.put(29, new JobDTO("Content Strategist", 56000.0, "Content", detailDTOMap.get(29)));
         jobDTOMap.put(30, new JobDTO("Research Analyst", 60000.0, "Research", detailDTOMap.get(30)));
 
+
         return  jobDTOMap;
 
     }
