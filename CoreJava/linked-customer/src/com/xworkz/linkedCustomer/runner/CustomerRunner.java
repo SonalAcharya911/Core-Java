@@ -14,7 +14,7 @@ public class CustomerRunner {
         Map<Integer, CustomerDTO> customerDTOMap = new HashMap<>();
 
 
-        CustomerDTO customerDTO1=new CustomerDTO("Aarav Mehta", 28, "aarav@gmail.com", passportDTOMap.get(1));
+        CustomerDTO customerDTO1=new CustomerDTO("Aarav Mehta", 28, "aarav218@gmail.com", passportDTOMap.get(1));
         CustomerDTO customerDTO2=new CustomerDTO("Sneha Rao", 25, "sneha@gmail.com", passportDTOMap.get(2));
         CustomerDTO customerDTO3=new CustomerDTO("Raj Verma",32, "rajv@gmail.com", passportDTOMap.get(3));
         CustomerDTO customerDTO4=new CustomerDTO("Divya Iyer", 27, "divya@gmail.com",passportDTOMap.get(4));
