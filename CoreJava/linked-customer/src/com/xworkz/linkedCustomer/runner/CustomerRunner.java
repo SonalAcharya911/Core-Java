@@ -99,5 +99,6 @@ public class CustomerRunner {
 
         System.out.println("===============Collect all unique Country=================");
         customerDTOS.stream().map((customerDTO -> customerDTO.getPassportDTO().getCountryDTO())).collect(Collectors.toSet()).forEach(System.out::println);
+
     }
 }
