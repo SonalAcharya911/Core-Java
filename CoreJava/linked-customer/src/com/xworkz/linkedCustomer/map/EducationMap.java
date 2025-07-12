@@ -15,7 +15,7 @@ public class EducationMap {
         educationMap.put(4, new EducationDTO("B.Com", "Mumbai University", 2018, 69.2));
         educationMap.put(5, new EducationDTO("MCA", "NIT Trichy", 2022, 80.1));
         educationMap.put(6, new EducationDTO("B.Tech", "NIT Warangal", 2021, 77.4));
-        educationMap.put(7, new EducationDTO("B.Sc", "Loyola College", 2020, 73.9));
+        educationMap.put(7, new EducationDTO("B.Sc", "Lovely Professional University", 2020, 73.9));
         educationMap.put(8, new EducationDTO("MBA", "IIM Ahmedabad", 2022, 85.2));
         educationMap.put(9, new EducationDTO("B.Com", "Christ University", 2019, 70.8));
         educationMap.put(10, new EducationDTO("MCA", "VIT Vellore", 2023, 81.3));
