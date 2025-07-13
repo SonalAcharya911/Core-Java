@@ -16,12 +16,12 @@ public class PassportMap {
         passportDTOMap.put(2, new PassportDTO("P0012346", "2016-07-01", "2026-07-01", countryDTOMap.get(2)));
         passportDTOMap.put(3, new PassportDTO("P0012347", "2017-08-21", "2027-08-21", countryDTOMap.get(3)));
         passportDTOMap.put(4, new PassportDTO("P0012348", "2014-05-10", "2024-05-10", countryDTOMap.get(4)));
-        passportDTOMap.put(5, new PassportDTO("P0012349", "2018-09-15", "2028-09-15", countryDTOMap.get(1)));
+        passportDTOMap.put(5, new PassportDTO("P0012349", "2018-09-15", "2028-09-15", countryDTOMap.get(5)));
         passportDTOMap.put(6, new PassportDTO("P0012350", "2019-01-03", "2029-01-03", countryDTOMap.get(6)));
         passportDTOMap.put(7, new PassportDTO("P0012351", "2013-11-22", "2023-11-22", countryDTOMap.get(7)));
         passportDTOMap.put(8, new PassportDTO("P0012352", "2020-04-17", "2030-04-17", countryDTOMap.get(8)));
         passportDTOMap.put(9, new PassportDTO("P0012353", "2016-02-28", "2026-02-28", countryDTOMap.get(9)));
-        passportDTOMap.put(10, new PassportDTO("P0012354", "2015-12-30", "2025-12-30", countryDTOMap.get(1)));
+        passportDTOMap.put(10, new PassportDTO("P0012354", "2015-12-30", "2025-12-30", countryDTOMap.get(10)));
         passportDTOMap.put(11, new PassportDTO("P0012355", "2017-06-18", "2027-06-18", countryDTOMap.get(11)));
         passportDTOMap.put(12, new PassportDTO("P0012356", "2018-10-05", "2028-10-05", countryDTOMap.get(12)));
         passportDTOMap.put(13, new PassportDTO("P0012357", "2014-01-19", "2024-01-19", countryDTOMap.get(13)));
