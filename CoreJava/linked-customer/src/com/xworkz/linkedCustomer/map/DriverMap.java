@@ -12,13 +12,13 @@ public class DriverMap {
         Map<Integer, VehicleDTO> vehicleDTOMap = VehicleMap.getVehicleMap();
         Map<Integer, DriverDTO> driverDTOMap = new HashMap<>();
 
-        driverDTOMap.put(1, new DriverDTO("Arun Yadav", "KA01A12345", 5, vehicleDTOMap.get(1)));
+        driverDTOMap.put(1, new DriverDTO("Arun Shetty", "KA01A12345", 5, vehicleDTOMap.get(1)));
         driverDTOMap.put(2, new DriverDTO("Naveen Reddy", "MH12B23456", 8, vehicleDTOMap.get(2)));
         driverDTOMap.put(3, new DriverDTO("Rakesh Mehta", "TS09C34567", 10, vehicleDTOMap.get(3)));
         driverDTOMap.put(4, new DriverDTO("Suresh Kumar", "DL5CD45678", 6, vehicleDTOMap.get(4)));
         driverDTOMap.put(5, new DriverDTO("Rajesh Singh", "TN10E56789", 7, vehicleDTOMap.get(5)));
         driverDTOMap.put(6, new DriverDTO("Manoj Sharma", "KA03F67890", 9, vehicleDTOMap.get(6)));
-        driverDTOMap.put(7, new DriverDTO("Karan Kapoor", "MH14G78901", 4, vehicleDTOMap.get(7)));
+        driverDTOMap.put(7, new DriverDTO("Karan Johar", "MH14G78901", 4, vehicleDTOMap.get(7)));
         driverDTOMap.put(8, new DriverDTO("Deepak Rao", "UP16H89012", 11, vehicleDTOMap.get(8)));
         driverDTOMap.put(9, new DriverDTO("Vijay Patil", "WB20J90123", 3, vehicleDTOMap.get(9)));
         driverDTOMap.put(10, new DriverDTO("Satish Das", "RJ45K01234", 12, vehicleDTOMap.get(10)));
