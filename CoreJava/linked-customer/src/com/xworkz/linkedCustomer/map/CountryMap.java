@@ -12,7 +12,7 @@ public class CountryMap {
         Map<Integer, PresidentDTO> presidentDTOMap = PresidentMap.getPresidentMap();
         Map<Integer, CountryDTO> countryDTOMap = new HashMap<>();
 
-        countryDTOMap.put(1, new CountryDTO("India", "INR", 1500000000L, presidentDTOMap.get(1)));
+        countryDTOMap.put(1, new CountryDTO("India", "INR", 1400000000L, presidentDTOMap.get(1)));
         countryDTOMap.put(2, new CountryDTO("USA", "USD", 331000000L, presidentDTOMap.get(2)));
         countryDTOMap.put(3, new CountryDTO("China", "CNY", 1440000000L, presidentDTOMap.get(3)));
         countryDTOMap.put(4, new CountryDTO("Brazil", "BRL", 213000000L, presidentDTOMap.get(4)));
